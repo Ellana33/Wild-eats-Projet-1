@@ -63,11 +63,13 @@ div {
     color: white;
 }
 
-div .facebook, div .mail {
+div .facebook,
+div .mail {
     margin: 20px 0 10px 20px;
 }
 
-div .instagram, div .phone {
+div .instagram,
+div .phone {
     margin: 0 0 10px 20px;
 }
 
