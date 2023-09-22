@@ -54,34 +54,57 @@ footer {
 .Informations {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    place-items: center;
 }
 
-
-div {
-    font-size: 10px;
+.footer-follow, .footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: white;
+    font-size: 15px;
 }
 
-div .facebook,
-div .mail {
-    margin: 20px 0 10px 20px;
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-div .instagram,
-div .phone {
-    margin: 0 0 10px 20px;
+
+nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+    background-color: #FDF5ED;
 }
 
-h5 {
-    display: inline;
-    color: white;
-}
-
-h5:nth-child(2) {
-    margin-left: 100px;
-}
-
-h5:first-child {
+nav > div {
     margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #2F827A;
+    font-size: 16px;
+    font-family: 'Prata';
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.295);
 }
