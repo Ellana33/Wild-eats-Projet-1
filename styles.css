@@ -45,3 +45,41 @@ button:hover {
     font-size: 12px;
 
 }
+
+footer {
+    background-color: #2F827A;
+    height: 80px;
+}
+
+.Informations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+
+div {
+    font-size: 10px;
+    color: white;
+}
+
+div .facebook, div .mail {
+    margin: 20px 0 10px 20px;
+}
+
+div .instagram, div .phone {
+    margin: 0 0 10px 20px;
+}
+
+h5 {
+    display: inline;
+    color: white;
+}
+
+h5:nth-child(2) {
+    margin-left: 100px;
+}
+
+h5:first-child {
+    margin-left: 20px;
+}
