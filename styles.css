@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FDF5ED;
+}
+
+button {
+    float: left;
+    background-color: #ADC39F;
+    display: block;
+}
+
+.Accueil {
+    margin: 30px 0 30px 100px;
+    height: 40px;
+    width: 70px;
+}
+
+.Restaurants {
+    margin: 30px 0 30px 30px;
+    height: 40px;
+    width: 90px;
+}
