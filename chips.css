@@ -21,3 +21,8 @@
 .chips__choice .chip.chip--active {
     background-color: #adc39f
 }
+
+.chips__choice {
+    margin: 10px;
+    margin-bottom: 0;
+}
