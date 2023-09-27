@@ -6,7 +6,7 @@ const listOfRestaurants = [
         picture: "img/restaurants/flams.jpg",
         type: "Flammekuche",
         note: "4.7",
-        price: "$"
+        price: "$",
     },
     {
         name: "McDonald's",

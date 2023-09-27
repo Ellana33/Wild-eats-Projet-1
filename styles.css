@@ -81,7 +81,7 @@ nav > div {
     flex-direction: column;
     justify-content: center;
     background-color: #2F827A;
-    height: 100px;
+    height: 150px;
     text-align: center;
 }
 
@@ -133,8 +133,8 @@ body {
     justify-items: center;
     padding: 1.5rem 0.7rem;
   }
-  
-  .restaurant-card {
+
+.restaurant-card {
     background-color: #2D3748;
     color: white;
     border-radius: 0.5rem;
@@ -145,63 +145,62 @@ body {
     padding: 1rem;
     transition: all 0.3s ease-in;
     width: 300px;
-  }
-  
-  .restaurant-card:hover {
+}
+
+.restaurant-card:hover {
     border: 1px solid #4299E1;  /* blue */
     cursor: pointer;
-  }
-  
-  .restaurant-card-img {
+}
+
+.restaurant-card-img {
     object-fit: cover;
     margin-bottom: 0.5rem;
     height: 12rem;
     width: 100%;
-  }
-  
-  .restaurant-card-content {
+}
+
+.restaurant-card-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     flex: 1;
-  }
-  
-  .restaurant-card-header {
+}
+
+.restaurant-card-header {
     margin-bottom: 0.5rem;
-  }
-  
-  .restaurant-card-header h3 {
+}
+
+.restaurant-card-header h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
-  }
-  
-  .restaurant-card-header p {
+}
+
+.restaurant-card-header p {
     margin-top: 0;
     font-size: 0.8rem;
-    color: #A0AEC0;  /* light gray */
-  }
-  
-  .restaurant-card-info {
+    color: #A0AEC0;
+}
+
+.restaurant-card-info {
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
-  }
-  
-  .star {
+}
+
+.star {
     color: #ECC94B;  /* yellow */
-  }
-  
-  .price {
-    color: #48BB78;  /* green */
-  }
+}
+
+.price {
+    color: #48BB78;
+}
 
 footer {
     background-color: #2F827A;
     height: 80px;
 }
-
 
 .footer-follow, .footer-contact {
     display: flex;
