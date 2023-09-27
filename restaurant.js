@@ -3,7 +3,7 @@ const restaurants = document.querySelector(".grid");
 const listOfRestaurants = [
     {
         name: "Flam's",
-        picture: "https://placekitten.com/200/287",
+        picture: "img/filtre.png",
         type: "Flammekuche",
         note: "4.7",
         price: "$"
@@ -57,12 +57,11 @@ function createRestaurants (title, imageUrl, type, reward, price) {
     const restaurantReward = document.createElement("span");
     restaurantReward.classList.add("star");
     restaurantReward.textContent = "★ " + reward;
+    restaurantInfo.appendChild(restaurantReward);
 
     const restaurantPrice = document.createElement("span");
     restaurantPrice.classList.add("price");
     restaurantPrice.textContent = price;
-
-    restaurantInfo.appendChild(restaurantReward);
     restaurantInfo.appendChild(restaurantPrice);
 
 }
