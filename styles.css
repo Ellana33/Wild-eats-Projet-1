@@ -198,6 +198,9 @@ body {
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: #2F827A;
     height: 80px;
 }
@@ -210,9 +213,3 @@ footer {
     font-size: 15px;
 }
 
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
