@@ -21,6 +21,20 @@ const listOfRestaurants = [
         type: "Français",
         note: "4.1",
         price: "$$",
+    },
+    {
+        name: "Eat Salad",
+        picture: "https://placekitten.com/200/140",
+        type: "Salade",
+        note: "4.2",
+        price: "$",
+    },
+    {
+        name: "Le foodtruck bio",
+        picture: "https://placekitten.com/200/141",
+        type: "Restauration rapide",
+        note: "3.8",
+        price: "$",
     }
 ];
 
