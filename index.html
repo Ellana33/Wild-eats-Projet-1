@@ -1,75 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wild'eats</title>
-    <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet'>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="chips.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Prata"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="chips.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="logo">
-            <img src="img/logo.png" alt="logo">
-        </div>
-        <div class="menu">
-            <a href="index.html">Accueil</a>
-            <a href="index.html">Restaurants</a>
-            <a href="index.html">Contact</a>
-        </div>
+      <div class="logo">
+        <img src="img/logo.png" alt="logo" />
+      </div>
+      <div class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="index.html">Restaurants</a>
+        <a href="index.html">Contact</a>
+      </div>
     </nav>
     <main>
-        <div class="title">
-            <h1>Wild'eat</h1>
-            <h4>Manger vite avec Wild'eat !</h4>
-        </div>
-        <div class="banner">
-            &nbsp;
-            <h3>Vous êtes à la Wild et ne savez pas où manger ?</h3>
-            <h3>Avec Wild'eat, vous trouevrez en 2 clics !</h3>
-        </div>
-        <div class="chips__choice">
-            <div class="chip chip--active">Tout</div>
-            <div class="chip">Sur le pouce</div>
-            <div class="chip">Exotique</div>
-            <div class="chip">Français</div>
-            <div class="chip">Européen</div>
-            <div class="chip">Ouvert tard</div>
-        </div>
-        <div class="grid">
-            <div class="restaurant-card">
-                <img src="img/restaurants/IT.jpg" alt="" class="restaurant-card-img">
-                <div class="restaurant-card-content">
-                    <div class="restaurant-card-header">
-                        <h3>It Italian Trattoria</h3>
-                        <p>Italian</p>
-                    </div>
-                    <div class="restaurant-card-info">
-                        <span class="star">★ 4.1</span>
-                        <span class="price">$$</span>
-                    </div>
-                </div>
+      <div class="title">
+        <h1>Wild'eat</h1>
+        <h4>Manger vite avec Wild'eat !</h4>
+      </div>
+      <div class="banner">
+        &nbsp;
+        <h3>Vous êtes à la Wild et ne savez pas où manger ?</h3>
+        <h3>Avec Wild'eat, vous trouevrez en 2 clics !</h3>
+      </div>
+      <div class="chips__choice">
+        <div class="chip chip--active">Tout</div>
+        <div class="chip">Sur le pouce</div>
+        <div class="chip">Exotique</div>
+        <div class="chip">Français</div>
+        <div class="chip">Européen</div>
+        <div class="chip">Ouvert tard</div>
+      </div>
+      <div class="grid">
+        <div class="restaurant-card" data-filter="Européen">
+          <img
+            src="img/restaurants/IT.jpg"
+            alt=""
+            class="restaurant-card-img"
+          />
+          <div class="restaurant-card-content">
+            <div class="restaurant-card-header">
+              <h3>It Italian Trattoria</h3>
+              <p>Italian</p>
             </div>
+            <div class="restaurant-card-info">
+              <span class="star">★★★★ 4.1</span>
+              <span class="price">$$</span>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
     <footer>
-        <div class="footer-follow">
-            <h4>Nous suivre :</h4>
-            <span class="facebook">wild-eats</span>
-            <span class="mail">contact@wild-eats.com</span>
-        </div>
-        <div class="footer-contact">
-            <h4>Nous contacter :</h4>
-            <span class="instagram">wild-eats</span>
-            <span class="phone">+33 00 00 00 00</span>
-        </div>
+      <div class="footer-follow">
+        <h4>Nous suivre :</h4>
+        <span class="facebook">wild-eats</span>
+        <span class="mail">contact@wild-eats.com</span>
+      </div>
+      <div class="footer-contact">
+        <h4>Nous contacter :</h4>
+        <span class="instagram">wild-eats</span>
+        <span class="phone">+33 00 00 00 00</span>
+      </div>
     </footer>
     <script src="chips.js"></script>
     <script src="restaurant.js"></script>
-</body>
-
+  </body>
 </html>
