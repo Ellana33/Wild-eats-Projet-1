@@ -13,13 +13,13 @@
 
 <body>
     <nav>
-        <div class="logo">
+        <div class="logo" id="scrollup">
             <img src="img/logo.png" alt="logo">
         </div>
         <div class="menu">
             <a href="index.html">Accueil</a>
-            <a href="index.html">Restaurants</a>
-            <a href="index.html">Contact</a>
+            <a href="#restaurant">Restaurants</a>
+            <a href="#contact" >Contact</a>
         </div>
     </nav>
     <main>
@@ -41,7 +41,7 @@
             <div class="chip">Ouvert tard</div>
         </div>
         <div class="grid">
-            <div class="restaurant-card">
+            <div class="restaurant-card" id="restaurant">
                 <img src="https://source.unsplash.com/weekly?food" alt="" class="restaurant-card-img">
                 <div class="restaurant-card-content">
                     <div class="restaurant-card-header">
@@ -63,9 +63,13 @@
             <span class="mail">contact@wild-eats.com</span>
         </div>
         <div class="footer-contact">
-            <h4>Nous contacter :</h4>
+            
+            <h4 id="contact">Nous contacter :</h4>
             <span class="instagram">wild-eats</span>
             <span class="phone">+33 00 00 00 00</span>
+        </div>
+        <div >
+            <a href="#scrollup"><img src="img/fleche-droite.png" class="topup"/></a>
         </div>
     </footer>
     <script src="chips.js"></script>
