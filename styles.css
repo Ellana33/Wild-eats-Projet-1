@@ -81,7 +81,7 @@ nav > div {
     flex-direction: column;
     justify-content: center;
     background-color: #2F827A;
-    height: 100px;
+    height: 150px;
     text-align: center;
 }
 
@@ -124,7 +124,7 @@ body {
     font-family: 'Space Mono', monospace;
     background: #1A202C;
     box-sizing: border-box;
-}
+  }
 
 .grid {
     display: grid;
@@ -140,7 +140,7 @@ body {
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; 
     margin: 0.3rem 0;
     padding: 1rem;
     transition: all 0.3s ease-in;
@@ -148,7 +148,7 @@ body {
 }
 
 .restaurant-card:hover {
-    border: 1px solid #4299E1;
+    border: 1px solid #4299E1;  /* blue */
     cursor: pointer;
 }
 
@@ -190,7 +190,7 @@ body {
 }
 
 .star {
-    color: #ECC94B;
+    color: #ECC94B;  /* yellow */
 }
 
 .price {
@@ -198,22 +198,18 @@ body {
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: #2F827A;
     height: 80px;
 }
-
 
 .footer-follow, .footer-contact {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     color: white;
-    font-size: 12px;
+    font-size: 15px;
 }
 
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
