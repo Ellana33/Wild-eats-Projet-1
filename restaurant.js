@@ -7,6 +7,7 @@ const listOfRestaurants = [
         type: "Flammekuche",
         note: "4.7",
         price: "$",
+        filterType: "Européen",
     },
     {
         name: "McDonald's",
@@ -14,6 +15,7 @@ const listOfRestaurants = [
         type: "Sur le pouce",
         note: "3.4",
         price: "$",
+        filterType: "Sur le pouce",
     },
     {
         name: "Bistrot régent",
@@ -21,6 +23,7 @@ const listOfRestaurants = [
         type: "Français",
         note: "4.1",
         price: "$$",
+        filterType: "Français",
     },
     {
         name: "Eat Salad",
@@ -28,6 +31,7 @@ const listOfRestaurants = [
         type: "Salade",
         note: "4.2",
         price: "$",
+        filterType: "Sur le pouce",
     },
     {
         name: "Le foodtruck bio",
@@ -35,6 +39,7 @@ const listOfRestaurants = [
         type: "Restauration rapide",
         note: "3.8",
         price: "$",
+        filterType: "Sur le pouce",
     },
     {
         name: "Le bureau",
@@ -42,6 +47,7 @@ const listOfRestaurants = [
         type: "Bistrot",
         note: "4.3",
         price: "$$",
+        filterType: "Ouvert tard",
     },
     {
         name: "Papadum",
@@ -49,6 +55,7 @@ const listOfRestaurants = [
         type: "Indien",
         note: "4.7",
         price: "$",
+        filterType: "Exotique",
     },
     {
         name: "Bistrot Spinoza",
@@ -56,6 +63,7 @@ const listOfRestaurants = [
         type: "Bistrot",
         note: "4.7",
         price: "$$",
+        filterType: "Français",
     },
     {
         name: "Su and Shi",
@@ -63,6 +71,7 @@ const listOfRestaurants = [
         type: "Japonais",
         note: "4.1",
         price: "$$",
+        filterType: "Exotique",
     },
     {
         name: "La dame",
@@ -70,6 +79,7 @@ const listOfRestaurants = [
         type: "Nocturne",
         note: "3.2",
         price: "$",
+        filterType: "Ouvert tard",
     },
     {
         name: "Joya",
@@ -77,6 +87,7 @@ const listOfRestaurants = [
         type: "Nocturne",
         note: "3.5",
         price: "$$",
+        filterType: "Ouvert tard",
     },
     {
         name: "La côte et l'Arète",
@@ -84,6 +95,7 @@ const listOfRestaurants = [
         type: "Français",
         note: "4.5",
         price: "$$",
+        filterType: "Français",
     },
     {
         name: "La terrasse",
@@ -91,6 +103,7 @@ const listOfRestaurants = [
         type: "Français",
         note: "4.3",
         price: "$$",
+        filterType: "Ouvert tard",
     },
     {
         name: "Tripletta",
@@ -98,6 +111,7 @@ const listOfRestaurants = [
         type: "Italien",
         note: "4.4",
         price: "$$",
+        filterType: "Européen",
     },
     {
         name: "Le Jardin Pêcheur",
@@ -105,6 +119,7 @@ const listOfRestaurants = [
         type: "Brasserie",
         note: "4.1",
         price: "$$",
+        filterType: "Français",
     },
     {
         name: "Café Maritime",
@@ -112,12 +127,14 @@ const listOfRestaurants = [
         type: "Français",
         note: "4.0",
         price: "$$",
+        filterType: "Français",
     }
 ];
 
-function createRestaurants (title, imageUrl, type, reward, price) {
+function createRestaurants (title, imageUrl, type, reward, price, filterType) {
     const restaurant = document.createElement("div");
     restaurant.classList.add("restaurant-card");
+    restaurant.setAttribute("data-filter", filterType);
     restaurants.appendChild(restaurant);
 
     const restaurantPicture = document.createElement("img");
@@ -159,5 +176,47 @@ function createRestaurants (title, imageUrl, type, reward, price) {
 
 for (let index = 0; index < listOfRestaurants.length; index++) {
     const restaurant = listOfRestaurants[index];
-    createRestaurants(restaurant.name, restaurant.picture, restaurant.type, restaurant.note, restaurant.price);
+    createRestaurants(restaurant.name, restaurant.picture, restaurant.type, restaurant.note, restaurant.price, restaurant.filterType);
+}
+
+// Récupérez les éléments de filtres et de restaurants
+const filters = document.querySelector('.chips__choice');
+const restaurantCards = document.querySelectorAll('.restaurant-card');
+
+filters.addEventListener('click', (event) => {
+    if (event.target.classList.contains('chip')) {
+        const filter = event.target.textContent.trim();
+        updateURL(filter); // Mettez à jour les query parameters de l'URL
+    }
+});
+
+// Fonction pour mettre à jour les query parameters de l'URL
+function updateURL(filter) {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    if (filter === 'Tout') {
+        urlParams.delete('filter'); // Supprimez le paramètre 'filter' s'il est égal à 'Tout'
+    } else {
+        urlParams.set('filter', filter); // Définissez le paramètre 'filter' avec la valeur du filtre
+    }
+
+    const newURL = window.location.pathname + '?' + urlParams.toString();
+    window.history.pushState({ path: newURL }, '', newURL); // Mettez à jour l'URL sans recharger la page
+    filterRestaurants(); // Appelez la fonction de filtrage pour mettre à jour l'affichage
+}
+
+
+function filterRestaurants() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const filter = urlParams.get('filter'); // Obtenez la valeur du paramètre 'filter' de l'URL
+
+    restaurantCards.forEach((card) => {
+        const cuisineType = card.getAttribute('data-filter');
+
+        if (filter === null || filter === 'Tout' || cuisineType === filter) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
 }
