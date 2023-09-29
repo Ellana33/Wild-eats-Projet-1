@@ -157,6 +157,7 @@ body {
     margin-bottom: 0.5rem;
     height: 12rem;
     width: 100%;
+    border-radius: 5px;
 }
 
 .restaurant-card-content {
@@ -191,6 +192,11 @@ body {
 
 .star {
     color: #ECC94B;  /* yellow */
+}
+
+.star > img {
+    height: 50px;
+    width: 50px;
 }
 
 .price {
