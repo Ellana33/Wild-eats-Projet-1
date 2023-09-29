@@ -17,7 +17,7 @@ body {
     margin-bottom: 20px;
 }
 
-.test > span {
+.test > .star, .price {
     margin-inline: 30px;
     margin-top: 5px;
 }
