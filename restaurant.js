@@ -21,7 +21,7 @@ const listOfRestaurants = [
     },
     {
         name: "Bistrot régent",
-        picture: "img/restaurants/bistrot regent.jpg",
+        picture: "img/restaurants/bistrot-regent.jpg",
         type: "Français",
         filter: "Français",
         note: "★★★★ 4.1",
@@ -30,7 +30,7 @@ const listOfRestaurants = [
     },
     {
         name: "Eat Salad",
-        picture: "img/restaurants/eat salad.jpg",
+        picture: "img/restaurants/eat-salad.jpg",
         type: "Salade",
         filter: "Sur le pouce",
         note: "★★★★ 4.2",
@@ -48,7 +48,7 @@ const listOfRestaurants = [
     },
     {
         name: "Le bureau",
-        picture: "img/restaurants/au bureau.jpg",
+        picture: "img/restaurants/au-bureau.jpg",
         type: "Bistrot",
         filter:"Ouvert tard",
         note: "★★★★ 4.3",
@@ -84,7 +84,7 @@ const listOfRestaurants = [
     },
     {
         name: "La dame",
-        picture: "img/restaurants/la dame.png",
+        picture: "img/restaurants/la-dame.png",
         type: "Nocturne",
         filter:"Ouvert tard",
         note: "★★★ 3.2",
@@ -102,7 +102,7 @@ const listOfRestaurants = [
     },
     {
         name: "La côte et l'Arète",
-        picture: "img/restaurants/cote arete.jpg",
+        picture: "img/restaurants/cote-arete.jpg",
         type: "Français",
         filter:"Français",
         note: "★★★★ 4.5",
@@ -111,7 +111,7 @@ const listOfRestaurants = [
     },
     {
         name: "La terrasse",
-        picture: "img/restaurants/la terasse.jpg",
+        picture: "img/restaurants/la-terasse.jpg",
         type: "Français",
         filter:"Ouvert tard",
         note: "★★★★ 4.3",
@@ -129,7 +129,7 @@ const listOfRestaurants = [
     },
     {
         name: "Le Jardin Pêcheur",
-        picture: "img/restaurants/le jardin pecheur.jpg",
+        picture: "img/restaurants/le-jardin-pecheur.jpg",
         type: "Brasserie",
         filter:"Français",
         note: "★★★★ 4.1",
@@ -138,7 +138,7 @@ const listOfRestaurants = [
     },
     {
         name: "Café Maritime",
-        picture: "img/restaurants/cafe maritime.jpg",
+        picture: "img/restaurants/cafe-maritime.jpg",
         type: "Français",
         filter:"Français",
         note: "★★★★ 4.0",

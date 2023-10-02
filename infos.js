@@ -49,8 +49,8 @@ const listOfRestaurants = [
         description: "Créez la salade de vos envies chez Eat Salad! Nous composons sous vos yeux votre salade sur-mesure, servie froide ou chaude, avec nos ingrédients frais et nos sauces faites maison. Eat Salad satisfait aussi toutes vos envies sucrées grâce à nos jus maison et desserts. Sur place, à emporter ou en livraison, votre repas est servi rapidement et avec le sourire chez Eat Salad.",
         map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1887.4110264353674!2d-0.5597578414046314!3d44.863897760445205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55288c3ebd5fd3%3A0xca0fc2319444168e!2sEat%20Salad!5e0!3m2!1sfr!2sfr!4v1695993849704!5m2!1sfr!2sfr",
         feedback:
-        "Véronique Frémond-Kahlouche : Très agréable restaurant où l'accueil est particulièrement chalereux ! On y mange de très bonnes choses de grande qualité et fraîcheur ! J'adore y aller ! Je recommande chaudement." +
-        "Christian Delégume : Une équipe jeune, sympathique et accueillante. Le concept est simple et redoutablement efficace. Pour ne rien gâcher c'est hyper bon. Si vous hésitez, vous avez tort. Allez-y et régalez vous. C'est aussi simple que cela",
+        ["Véronique Frémond-Kahlouche : Très agréable restaurant où l'accueil est particulièrement chalereux ! On y mange de très bonnes choses de grande qualité et fraîcheur ! J'adore y aller ! Je recommande chaudement.",
+        "Christian Delégume : Une équipe jeune, sympathique et accueillante. Le concept est simple et redoutablement efficace. Pour ne rien gâcher c'est hyper bon. Si vous hésitez, vous avez tort. Allez-y et régalez vous. C'est aussi simple que cela"],
     },
     {
         name: "Le foodtruck bio",
@@ -192,7 +192,8 @@ const createPage = (index) => {
         <div class="feedbacks">
             <h3>Avis</h3>
             <div class="feedback-cards">
-                <p class="feedback">${listOfRestaurants[index].feedback}<br></p>
+                <p class="feedback">${listOfRestaurants[index].feedback[0]}</p>
+                <p class="feedback">${listOfRestaurants[index].feedback[1]}</p>
             </div>
         </div>
         <div class="location">
