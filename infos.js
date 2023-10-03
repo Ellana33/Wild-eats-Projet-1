@@ -66,9 +66,9 @@ const listOfRestaurants = [
         type: "Bistrot",
         note: "★★★★ 4.3",
         price: "$$",
-        description: "",
+        description: "Rendez-vous dans nos pub authentiques et unique ... Veritable lieu de vie au décors Anglo-saxons. Au bureau rithme votre journée du matin jusqu'au soir : Repas entre amis, apéros, sport, musique, danse ... Vous allez aimer passé du temps au Bureau.",
         map: "",
-        feedback: "",
+        feedback: "KevinOthèque : Un très belle endroit avec un personnel sourriant et efficace, j'ai pue prendre le Spicy burger qui était exellent. \n AymericOray : Depuis le temps qu'on voulait y venir, c'est fait et pas de regrets et belle découverte. Accueil au top, service des nombreux serveurs, souriant et aggréable. \n HervéStibule : Cadre sympa et service attentionné.",
     },
     {
         name: "Papadum",
@@ -78,7 +78,9 @@ const listOfRestaurants = [
         price: "$",
         description: "",
         map: "",
-        feedback: "",
+        feedback: "BenjaminSanspouce : De passage lors de notre périple a Bordeaux nous avons par hasard croisé cette établissement.",
+        // "DarenRoi : Nous avons manger copieusement : portion généreuse, aliments frais mais nous regretter le manque de saveur. Le goût est vraiment trop occidentalisé donc quand on aime les épices indiennes on est déçu."
+        // "MélinaTure : Une expérience incroyable, le services était top, le personnel très professionnel mais intime avec ses clients et que dire sur la nouriture ... UN VRAI DÉLICE !"
     },
     {
         name: "Bistrot Spinoza",
@@ -108,9 +110,9 @@ const listOfRestaurants = [
         type: "Nocturne",
         note: "★★★ 3.2",
         price: "$",
-        description: "",
+        description: "Restaurant / Discothèque branché sur un bateau proposant des plates internationaux et des cocktail, avec des DJ Bordelais.",
         map: "",
-        feedback: "",
+        feedback: "ÉlodieManche : Grosse decéption, beaucoup de monde et 17€ à l'entrée. \n VincentTime : J'avais pas envie parce que je suis une tête de mûle mais Julien nous à tellement accuillis !!!!! Nous étions 30 mais il souviendrons des L5 et nous nous nous souviendrons de lui et du repas. Nous nous sommmes régalé, le repas délicieux, le vin parfait et Julien extra-ordinaire !!!!! Allez-y vite, Merci Julien ! \n MarieGolade : Je n'ai pas profiter de la nouriture au vue de l'heur. Mais pour la partie club / Boite de nuit je dois dire que j'ai beaucoup aimé l'ambiance, Le cadre, la vue etc ...",
     },
     {
         name: "Joya",
@@ -118,9 +120,9 @@ const listOfRestaurants = [
         type: "Nocturne",
         note: "★★★ 3.5",
         price: "$$",
-        description: "",
+        description: "Restaurant intimste proposant un brunch le dimanche et en soirée annimation.",
         map: "",
-        feedback: "",
+        feedback: "SirylDeRay : Ambiance et vue sympa mais carte restaurant ne correspond pas à celle du web ni a l'entrée du restaurant. Bref dommage. \'n MathieuSard : Très bon repas, ambiance festive après 23h",
     },
     {
         name: "La côte et l'Arète",
@@ -138,9 +140,9 @@ const listOfRestaurants = [
         type: "Français",
         note: "★★★★ 4.3",
         price: "$$",
-        description: "",
+        description: "Ambiance sympatique en journée avec soirée a thème le week-end.",
         map: "",
-        feedback: "",
+        feedback: "AlainTerrieur : Super resto, bien mangé, partis la peau du ventre bien tendus. \n MarieTime : J'étais à coté de la personne peau du ventre bien tendu, je suis d'accord avec lui. \n LouisLabrocante : Super rencontre avec Mr terrieur et Mme Time, Je recommande.",
     },
     {
         name: "Tripletta",
@@ -180,20 +182,25 @@ const createPage = (index) => {
     const containerPage = document.querySelector(".test");
     const page2 = document.createElement("div");
     page2.innerHTML = `
+        <div class="block-img">
         <img src="img/restaurants/IT.jpg" alt="Restaurant italien." class="restaurant-card-img" >
+        </div>
+        <div class="text-restaurant">
         <h3 class="title-restaurant">${listOfRestaurants[index].name}</h3>
         <p class="type-food">Italien</p>
         <span class="star">★★★★ 4.1</span>
         <span class="price">$$</span>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptas? Explicabo, modi perferendis deserunt nisi distinctio fugit velit, quisquam dolore natus porro, corporis officia sequi laborum itaque id perspiciatis eius!</p>
-        <div class="feedbacks">
-            <div class="feedback-cards">
-                <p>★★★  - Alexandre.</p>
-            </div>
-        </div>
         <div class="location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22621.891298839797!2d-0.6003542256835738!3d44.86766060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552985c9603b43%3A0x8950156090451f57!2sIT%20-%20Italian%20Trattoria%20-%20Bassins%20%C3%A0%20Flot%20N%C2%B02%2C%2040%20quai%20Virginie%20H%C3%A9riot%2C%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1695915822268!5m2!1sfr!2sfr" width="250" height="112" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    `;
+        </div>
+        <div class="feedbacks">
+        <div class="feedback-cards">
+                <p><span class="yellow-stars">★★★</span> | Alexandre.</p>
+            </div>
+        </div>
+        </div>
+        `;
     containerPage.appendChild(page2);
     
 }

@@ -22,13 +22,17 @@ body {
     margin-top: 5px;
 }
 
-.price {
+.test > .price {
     float: right;
 }
 
-.title-restaurant, .type-food, .description {
+.text-restaurant {
     color: white;
     margin-inline: 30px;
+}
+
+.yellow-stars {
+    color: #ECC94B;
 }
 
 .description {
@@ -41,4 +45,21 @@ body {
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.restaurant-card-img {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.feedbacks > .feedback-cards {
+    background-color: #2F827A;
+    border-radius: 10px;
+    margin-block: 20px;
+}
+
+.feedbacks > .feedback-cards > p {
+    margin-left: 10px;
 }
