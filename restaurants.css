@@ -17,14 +17,15 @@ body {
     margin-bottom: 20px;
 }
 
-.test > .star, .price {
-    margin-inline: 30px;
-    margin-top: 5px;
+.restaurant-card-img {
+    margin: 20px 20px;
+    width: 90%;
 }
 
-.price {
-    float: right;
+.test > .star, .price {
+    margin-inline: 30px;
 }
+
 
 .title-restaurant, .type-food, .description, .feedback {
     color: white;
@@ -34,6 +35,14 @@ body {
 .description {
     font-size: 0.813rem;
     margin-top: 5px;
+}
+
+.star {
+    margin-left: 30px;
+}
+
+.price {
+    float: right;
 }
 
 .feedbacks h3 {

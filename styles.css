@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -111,6 +112,7 @@ nav > div {
     background-blend-mode: multiply;
     margin: 0;
     height: 35vw;
+    width: 100%;
 }
 
 .banner h3 {
@@ -140,7 +142,7 @@ body {
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     margin: 0.3rem 0;
     padding: 1rem;
     transition: all 0.3s ease-in;
@@ -191,7 +193,7 @@ body {
 }
 
 .star {
-    color: #ECC94B;  /* yellow */
+    color: #ECC94B;
 }
 
 .star > img {
@@ -204,8 +206,9 @@ body {
 }
 
 
-.topup{
-    width:50px;
+.topup {
+    width: 33px;
+    margin-top: 20px;
 }
 
 footer {
@@ -221,9 +224,9 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     color: white;
-    font-size: 15px;
+    font-size: 11px;
 }
 
-.fb{
-    width: 30px;
+.fb, .insta, .email, .pho {
+    width: 20px;
 }
