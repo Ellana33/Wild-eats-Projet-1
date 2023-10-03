@@ -9,6 +9,13 @@ const listOfRestaurants = [
         note: "★★★★ 4.7",
         price: "$",
         filterType: "Européen",
+        description: "Prenez place dans notre restaurant pour déguster de délicieuses Flammekueches et autres spécialités alsaciennes.",
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.774834837901!2d-0.5638900235514509!3d44.86687847107028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55294b9110484d%3A0xea0fc62fefae3859!2sFlam&#39;s%20BORDEAUX!5e0!3m2!1sen!2sfr!4v1696328452997!5m2!1sen!2sfr",
+        feedback: ["Solène l'abeille : \"12,90€ pour des flammekueches à volonté : un rapport qualité-prix imbattable, surtout qu'elles sont 
+        finement délicieuses !! On en a pris 5 tournées à 2 et on s'est vraiment régalées. Bons et réconfortant.\",
+
+        "MarieTime : \"J'étais à coté de la personne peau du ventre bien tendu, je suis d'accord avec lui.\"",
+        "LouisLabrocante : \"Super rencontre avec Mr terrieur et Mme Time, Je recommande.\""],
     },
     {
         name: "McDonald's",
