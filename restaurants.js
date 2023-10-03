@@ -5,9 +5,11 @@ const listOfRestaurants = [
         type: "Italien",
         note: "★★★★ 4.1",
         price: "$",
-        description: "",
-        map: "",
-        feedback: "",
+        description: "Une trattoria ancrée dans la tradition est généralement dépourvue de menu imprimé, avec un service décontracté, du vin vendu à la carafe plutôt qu'à la bouteille, des prix bas et un menu d'offres modestes mais abondantes qui suivent des recettes régionales et locales plutôt que de la haute cuisine.",
+        map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45249.98516144877!2d-0.5863512414017767!3d44.85976888757434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552985c9603b43%3A0x8950156090451f57!2sIT%20-%20Italian%20Trattoria%20-%20Bassins%20%C3%A0%20Flot%20N%C2%B02%2C%2040%20quai%20Virginie%20H%C3%A9riot%2C%20Bordeaux!5e0!3m2!1sen!2sfr!4v1696327610281!5m2!1sen!2sfr",
+        feedback: ["Fontanille Nina : \"Un des meilleurs restaurant italien à Bordeaux. \n Habitant à 45 min de votre restaurant, nous sommes à chaque fois impatient de venir y déguster vos plats ... \"",
+                    "FZ EA : \"Bonne cuisine italienne, même si nos plats avaient certains bémols(les pâtes a la truffe manque de goût de truffe et les pâtes aux anchois trop salées.) Les désserts ont rattrapés le repas car très bons (tiramisu sans alcool). Le restaurat propose des portions XL pour les plus gourmand ! ...\"",
+                    "Carine Jansana : \" En sortant de la visite des bassins des lumières, à 14h, superbe déjeuner tardif (aucun soucis pour l'arrivée tardive) Accueil sympatique, choix d'une pizza vegetale, de pasta amalfi et de pasta modena : les trois sont succulent et copieux. ... \""]
     },
     {
         name: "Flam's",
