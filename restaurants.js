@@ -80,9 +80,10 @@ const listOfRestaurants = [
         note: "★★★★ 4.3",
         price: "$$",
         filterType: "Ouvert tard",
-        description: "",
+        description: "Rendez-vous dans nos pub authentiques et unique ... Veritable lieu de vie au décors Anglo-saxons. Au bureau rithme votre journée du matin jusqu'au soir : Repas entre amis, apéros, sport, musique, danse ... Vous allez aimer passé du temps au Bureau.",
         map: "",
-        feedback: "",
+        feedback: ["KevinOthèque : \"Un très belle endroit avec un personnel sourriant et efficace, j'ai pue prendre le Spicy burger qui était exellent.\"", 
+        "AymericOray : \"Depuis le temps qu'on voulait y venir, c'est fait et pas de regrets et belle découverte. Accueil au top, service des nombreux serveurs, souriant et aggréable.\"", "HervéStibule : \"Cadre sympa et service attentionné.\""],
     },
     {
         name: "Papadum",
@@ -94,7 +95,9 @@ const listOfRestaurants = [
         filterType: "Exotique",
         description: "",
         map: "",
-        feedback: "",
+        feedback: ["BenjaminSanspouce : \"De passage lors de notre périple a Bordeaux nous avons par hasard croisé cette établissement.\"",
+        "DarenRoi : \"Nous avons manger copieusement : portion généreuse, aliments frais mais nous regretter le manque de saveur. Le goût est vraiment trop occidentalisé donc quand on aime les épices indiennes on est déçu.\"",
+        "MélinaTure : \"Une expérience incroyable, le services était top, le personnel très professionnel mais intime avec ses clients et que dire sur la nouriture ... UN VRAI DÉLICE !\""],
     },
     {
         name: "Bistrot Spinoza",
@@ -130,9 +133,11 @@ const listOfRestaurants = [
         note: "★★★ 3.2",
         price: "$",
         filterType: "Ouvert tard",
-        description: "",
+        description: "Restaurant / Discothèque branché sur un bateau proposant des plates internationaux et des cocktail, avec des DJ Bordelais.",
         map: "",
-        feedback: "",
+        feedback: ["ÉlodieManche : \"Grosse decéption, beaucoup de monde et 17€ à l'entrée.\"",
+        "VincentTime : \"J'avais pas envie parce que je suis une tête de mûle mais Julien nous à tellement accuillis !!!!! Nous étions 30 mais il souviendrons des L5 et nous nous nous souviendrons de lui et du repas. Nous nous sommmes régalé, le repas délicieux, le vin parfait et Julien extra-ordinaire !!!!! Allez-y vite, Merci Julien !\"",
+        "MarieGolade : \"Je n'ai pas profiter de la nouriture au vue de l'heur. Mais pour la partie club / Boite de nuit je dois dire que j'ai beaucoup aimé l'ambiance, Le cadre, la vue etc ...\""],
     },
     {
         name: "Joya",
@@ -142,9 +147,10 @@ const listOfRestaurants = [
         note: "★★★ 3.5",
         price: "$$",
         filterType: "Ouvert tard",
-        description: "",
+        description: "Restaurant intimste proposant un brunch le dimanche et en soirée annimation.",
         map: "",
-        feedback: "",
+        feedback: ["SirylDeRay : \"Ambiance et vue sympa mais carte restaurant ne correspond pas à celle du web ni a l'entrée du restaurant. Bref dommage.\"",
+        "MathieuSard : \"Très bon repas, ambiance festive après 23h\""],
     },
     {
         name: "La côte et l'Arète",
@@ -166,9 +172,11 @@ const listOfRestaurants = [
         note: "★★★★ 4.3",
         price: "$$",
         filterType: "Ouvert tard",
-        description: "",
+        description: "Ambiance sympatique en journée avec soirée a thème le week-end.",
         map: "",
-        feedback: "",
+        feedback: ["AlainTerrieur : \"Super resto, bien mangé, partis la peau du ventre bien tendus.\"",
+        "MarieTime : \"J'étais à coté de la personne peau du ventre bien tendu, je suis d'accord avec lui.\"",
+        "LouisLabrocante : \"Super rencontre avec Mr terrieur et Mme Time, Je recommande.\""],
     },
     {
         name: "Tripletta",
@@ -217,21 +225,25 @@ const createPage = (index) => {
 
     if (selectedRestaurant) {
         restaurantPage.innerHTML = `
-            <img src=${listOfRestaurants[index].picture} alt="Restaurant italien." class="restaurant-card-img" >
-            <h3 class="title-restaurant">${listOfRestaurants[index].name}</h3>
-            <p class="type-food">${listOfRestaurants[index].type}</p>
-            <span class="star">${listOfRestaurants[index].note}</span>
-            <span class="price">${listOfRestaurants[index].price}</span>
-            <p class="description">${listOfRestaurants[index].description}</p>
+            <div class="block-img">
+                <img src=${listOfRestaurants[index].picture} alt="Restaurant italien." class="restaurant-card-img" >
+            </div>
+            <div class="text-restaurant">
+                <h3 class="title-restaurant">${listOfRestaurants[index].name}</h3>
+                <p class="type-food">${listOfRestaurants[index].type}</p>
+                <span class="star">${listOfRestaurants[index].note}</span>
+                <span class="price">${listOfRestaurants[index].price}</span>
+                <p class="description">${listOfRestaurants[index].description}</p>
+                <div class="location">
+                <iframe src="${listOfRestaurants[index].map}" width="250" height="112" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             <div class="feedbacks">
                 <h3>Avis</h3>
                 <div class="feedback-cards">
-                    <p class="feedback">${listOfRestaurants[index].feedback[0]}</p>
-                    <p class="feedback">${listOfRestaurants[index].feedback[1]}</p>
+                    <p class="feedback"><span class="yellow-stars">*** </span>${listOfRestaurants[index].feedback[0]}</p>
+                    <p class="feedback"><span class="yellow-stars">*** </span>${listOfRestaurants[index].feedback[1]}</p>
                 </div>
             </div>
-            <div class="location">
-            <iframe src="${listOfRestaurants[index].map}" width="250" height="112" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         `;
     }
     containerPage.appendChild(restaurantPage);

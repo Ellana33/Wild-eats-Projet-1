@@ -17,15 +17,13 @@ body {
     margin-bottom: 20px;
 }
 
-.restaurant-card-img {
-    margin: 20px 20px;
-    width: 90%;
-}
-
 .test > .star, .price {
     margin-inline: 30px;
 }
 
+.test > .price {
+    float: right;
+}
 
 .title-restaurant, .type-food, .description, .feedback {
     color: white;
@@ -43,6 +41,10 @@ body {
 
 .price {
     float: right;
+}
+
+.yellow-stars {
+    color: #ECC94B;
 }
 
 .feedbacks h3 {
@@ -63,4 +65,21 @@ body {
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.restaurant-card-img {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.feedbacks > .feedback-cards {
+    background-color: #2F827A;
+    border-radius: 10px;
+    margin-block: 20px;
+}
+
+.feedbacks > .feedback-cards > p {
+    margin-left: 10px;
 }

@@ -59,6 +59,7 @@
     /* img */
     .block-img > .restaurant-card-img {
         width: 60%;
+        height: 400px;
         margin-block: 20px;
     }
 
