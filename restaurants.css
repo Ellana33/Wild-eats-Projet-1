@@ -33,6 +33,7 @@ body {
 .description {
     font-size: 0.813rem;
     margin-top: 5px;
+    margin-bottom: 45px;
 }
 
 .star {
@@ -73,11 +74,14 @@ body {
     width: 80%;
     height: 300px;
     margin: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-block: 5px;
 }
 
-.feedbacks > .feedback-cards {
+.feedbacks {
+    margin-inline: 30px;
+}
+
+.feedbacks > .feedback-cards *{
     background-color: #2F827A;
     border-radius: 10px;
     margin-block: 20px;
@@ -86,3 +90,16 @@ body {
 .feedbacks > .feedback-cards > p {
     margin-left: 10px;
 }
+
+.feedback {
+    margin-left: 30px;
+}
+
+.text-restaurant > h3 {
+    margin-top: 20px;
+}
+
+.text-restaurant > .type-food {
+    margin-top: 5px;
+}
+/* Block .test */

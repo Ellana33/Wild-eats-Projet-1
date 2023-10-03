@@ -253,8 +253,8 @@ const createPage = (index) => {
             <div class="feedbacks">
                 <h3>Avis</h3>
                 <div class="feedback-cards">
-                    <p class="feedback"><span class="yellow-stars">*** </span>${listOfRestaurants[index].feedback[0]}</p>
-                    <p class="feedback"><span class="yellow-stars">*** </span>${listOfRestaurants[index].feedback[1]}</p>
+                    <p class="feedback"><span class="yellow-stars">★★★ </span>${listOfRestaurants[index].feedback[0]}</p>
+                    <p class="feedback"><span class="yellow-stars">★★★ </span>${listOfRestaurants[index].feedback[1]}</p>
                     <p class="feedback"><span class="yellow-stars">*** </span>${listOfRestaurants[index].feedback[2]}</p>
                 </div>
             </div>
