@@ -57,7 +57,8 @@ body {
 .feedback {
     font-style: italic;
     font-size: 0.813rem;
-    margin-top: 5px;
+    margin-top: 10px;
+    padding: 5px 0;
 }
 
 .location {
@@ -70,8 +71,10 @@ body {
 .restaurant-card-img {
     display: flex;
     width: 80%;
-    height: auto;
+    height: 300px;
     margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .feedbacks > .feedback-cards {
