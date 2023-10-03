@@ -19,7 +19,7 @@ const listOfRestaurants = [
         filterType: "Européen",
         description: "",
         map: "",
-        feedback: "",
+        feedback: "", 
     },
     {
         name: "McDonald's",
