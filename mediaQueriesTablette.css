@@ -89,4 +89,9 @@
         height: 275px;
         /* height: clamp(448px, 50%, 896px); */
     }
+
+    /* Add comment */
+    #write-review {
+        margin-inline: 100px;
+    }
 }
