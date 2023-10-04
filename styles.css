@@ -214,6 +214,7 @@ footer {
   justify-content: space-around;
   background-color: #2f827a;
   height: 80px;
+  width: 100vw;
 }
 
 .footer-follow,
@@ -230,4 +231,14 @@ footer {
 .email,
 .pho {
   width: 20px;
+}
+
+.span-image {
+  display: flex;
+  align-items: center;
+  min-width: 10rem;
+}
+
+.span-image > img {
+  padding-right: 2%;
 }

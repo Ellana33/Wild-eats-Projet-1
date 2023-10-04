@@ -105,4 +105,8 @@
   #write-review > textarea {
     font-size: 23px;
   }
+
+  .span-image {
+    width: 20rem;
+  }
 }
