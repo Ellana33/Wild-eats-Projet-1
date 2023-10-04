@@ -19,17 +19,12 @@ const listOfRestaurants = [
         note: "★★★★ 4.7",
         price: "$",
         filterType: "Européen",
-<<<<<<< HEAD
-        description: "",
-        map: "",
-        feedback: "", 
-=======
         description: "Prenez place dans notre restaurant pour déguster de délicieuses Flammekueches et autres spécialités alsaciennes. Notre Flam’s est situé quai Virginie Hériot, à proximité du cinéma UGC Ciné Cité, à Bassins à Flot Bordeaux.",
         map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.774834837901!2d-0.5638900235514509!3d44.86687847107028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55294b9110484d%3A0xea0fc62fefae3859!2sFlam&#39;s%20BORDEAUX!5e0!3m2!1sen!2sfr!4v1696328452997!5m2!1sen!2sfr",
         feedback: ["Solène l'abeille :", "12,90€ pour des flammekueches à volonté : un rapport qualité-prix imbattable, surtout qu'elles sont finement délicieuses !! On en a pris 5 tournées à 2 et on s'est vraiment régalées. Bons et réconfortant.",
         "LoganIstan :", "Excellent rapport qualité prix. Nous avons opté pour la formule à volonté à partager au prix de 17€90 inculant également un dessert au choix. Les serveuses s'adaptent à vos demandes. En effet, nous voulions goûter un maximum de saveurs, ...",
         "JulienPlusun :", "Un restaurant sympatique dans une lieu calme! La formule à volonté permet de tester plusieurs flamenkuches ce qui est intéressant. Celles que j'ai pu tester, salées comme sucrées, étaient très bonnes ! ..."],
->>>>>>> ba0d103ba5b8c65c306edc3dca2b35cdbb8d11e7
+
     },
     {
         name: "McDonald's",
