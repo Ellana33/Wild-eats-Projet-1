@@ -1,232 +1,244 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #FDF5ED;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fdf5ed;
 }
 
 nav {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 50px;
-    background-color: #FDF5ED;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 50px;
+  background-color: #fdf5ed;
 }
 
 nav > div {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .menu {
-    display: flex;
-    justify-content: start;
-    gap: 10px;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
 }
 
 .logo img {
-    width: 50px;
+  width: 50px;
 }
 
 .menu a {
-    text-decoration: none;
-    color: #2F827A;
-    font-size: 16px;
-    font-family: 'Prata';
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    padding-left: 3px;
-    padding-right: 3px;
+  text-decoration: none;
+  color: #2f827a;
+  font-size: 16px;
+  font-family: "Prata";
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .menu a:hover {
-    background-color: rgba(255, 255, 255, 0.295);
+  background-color: rgba(255, 255, 255, 0.295);
 }
 
 .Accueil {
-    margin: 30px 0 30px 100px;
-    height: 30px;
-    width: 60px;
-    font-size: 12px;
+  margin: 30px 0 30px 100px;
+  height: 30px;
+  width: 60px;
+  font-size: 12px;
 }
 
 .Restaurants {
-    margin: 30px 0 30px 10px;
-    height: 30px;
-    width: 90px;
-    font-size: 12px;
-
+  margin: 30px 0 30px 10px;
+  height: 30px;
+  width: 90px;
+  font-size: 12px;
 }
 
 .Contact {
-    margin: 30px 0 30px 10px;
-    height: 30px;
-    width: 60px;
-    font-size: 12px;
-
+  margin: 30px 0 30px 10px;
+  height: 30px;
+  width: 60px;
+  font-size: 12px;
 }
 
 .Informations {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #2F827A;
-    height: 150px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2f827a;
+  height: 150px;
+  text-align: center;
 }
 
 .title h1 {
-    color: white;
-    font-size: 30px;
-    font-family: 'Prata';
-    margin-bottom: 5px;
+  color: white;
+  font-size: 30px;
+  font-family: "Prata";
+  margin-bottom: 5px;
 }
 
 .title h4 {
-    color: white;
-    font-size: 12px;
-    font-family: 'Prata';
-    font-weight: normal;
+  color: white;
+  font-size: 12px;
+  font-family: "Prata";
+  font-weight: normal;
 }
 
 .banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(img/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: grey;
-    background-blend-mode: multiply;
-    margin: 0;
-    height: 35vw;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: grey;
+  background-blend-mode: multiply;
+  margin: 0;
+  height: 35vw;
+  width: 100%;
 }
 
 .banner h3 {
-    color: white;
-    font-size : 15px;
-    font-family: 'Prata';
-    font-weight: normal;
+  color: white;
+  font-size: 15px;
+  font-family: "Prata";
+  font-weight: normal;
 }
 
 body {
-    font-family: 'Space Mono', monospace;
-    background: #1A202C;
-    box-sizing: border-box;
-  }
+  font-family: "Space Mono", monospace;
+  background: #1a202c;
+  box-sizing: border-box;
+}
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-    grid-gap: 20px;
-    justify-items: center;
-    padding: 1.5rem 0.7rem;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  padding: 1.5rem 0.7rem;
+}
 
 .restaurant-card {
-    background-color: #2D3748;
-    color: white;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0.3rem 0;
-    padding: 1rem;
-    transition: all 0.3s ease-in;
-    width: 300px;
+  background-color: #2d3748;
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0.3rem 0;
+  padding: 1rem;
+  transition: all 0.3s ease-in;
+  width: 300px;
 }
 
 .restaurant-card:hover {
-    border: 1px solid #4299E1;  /* blue */
-    cursor: pointer;
+  border: 1px solid #4299e1; /* blue */
+  cursor: pointer;
 }
 
 .restaurant-card-img {
-    object-fit: cover;
-    margin-bottom: 0.5rem;
-    height: 12rem;
-    width: 100%;
-    border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  height: 12rem;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .restaurant-card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
 }
 
 .restaurant-card-header {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .restaurant-card-header h3 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .restaurant-card-header p {
-    margin-top: 0;
-    font-size: 0.8rem;
-    color: #A0AEC0;
+  margin-top: 0;
+  font-size: 0.8rem;
+  color: #a0aec0;
 }
 
 .restaurant-card-info {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
 }
 
 .star {
-    color: #ECC94B;
+  color: #ecc94b;
 }
 
 .star > img {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 .price {
-    color: #48BB78;
+  color: #48bb78;
 }
 
-
 .topup {
-    width: 33px;
-    margin-top: 20px;
+  width: 33px;
+  margin-top: 20px;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #2F827A;
-    height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #2f827a;
+  height: 80px;
+  width: 100vw;
 }
 
-.footer-follow, .footer-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: white;
-    font-size: 11px;
+.footer-follow,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  font-size: 11px;
 }
 
-.fb, .insta, .email, .pho {
-    width: 20px;
+.fb,
+.insta,
+.email,
+.pho {
+  width: 20px;
+}
+
+.span-image {
+  display: flex;
+  align-items: center;
+  min-width: 10rem;
+}
+
+.span-image > img {
+  padding-right: 2%;
 }

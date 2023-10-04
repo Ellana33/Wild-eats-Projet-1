@@ -1,105 +1,107 @@
 /* Responsive Page Accueil et Page2. */
 @media screen and (min-width: 600px) and (max-width: 1199px) {
-    /* NAV */
-    nav {
-        height: 75px;
-    }
+  /* NAV */
+  nav {
+    height: 75px;
+  }
 
-    nav > .logo > img {
-        width: 75px;
-    }
+  nav > .logo > img {
+    width: 75px;
+  }
 
-    nav > .menu > a {
-        font-size: 19px;
-    }
+  nav > .menu > a {
+    font-size: 19px;
+  }
 
-    /* BODY */
-    body > main > .title {
-        height: 225px;
-    }
+  /* BODY */
+  body > main > .title {
+    height: 225px;
+  }
 
-    body > main > .title > h1 {
-        font-size: 45px;
-    }
+  body > main > .title > h1 {
+    font-size: 45px;
+  }
 
-    body > main > .title > h4 {
-        font-size: 25px;
-    }
+  body > main > .title > h4 {
+    font-size: 25px;
+  }
 
-    body > main > .banner > h3 {
-        font-size: 22px;
-    }
+  body > main > .banner > h3 {
+    font-size: 22px;
+  }
 
-    body > main > .chips__choice > .chip {
-        font-size: 16px;
-        height: 34px;
-    }
+  body > main > .chips__choice > .chip {
+    font-size: 16px;
+    height: 34px;
+  }
 
-    /* FOOTER */
+  /* FOOTER */
 
-    footer {
-        height: 100px;
-    }
+  footer {
+    height: 100px;
+  }
 
-    footer > .footer-follow, .footer-contact {
-        font-size: 16px;
-    }
+  footer > .footer-follow,
+  .footer-contact {
+    font-size: 16px;
+  }
 
+  .span-image {
+    width: 15rem;
+  }
 }
 
 /* Responsive Page2 > BODY */
 @media screen and (min-width: 600px) and (max-width: 1199px) {
-    
-    .text-restaurant {
-        margin-inline: 50px;
-    }
-    
-    /* img */
-    .block-img > .restaurant-card-img {
-        width: 70%;
-        height: 400px;
-        margin-block: 20px;
-    }
+  .text-restaurant {
+    margin-inline: 50px;
+  }
 
-    /* Bloc texte */
-    .text-restaurant > h3 {
-        font-size: 40px;
-        margin-top: 40px;
-    }
+  /* img */
+  .block-img > .restaurant-card-img {
+    width: 70%;
+    height: 400px;
+    margin-block: 20px;
+  }
 
-    .text-restaurant > .type-food {
-        font-size: 25px;
-        margin-top: 10px;
-    }
+  /* Bloc texte */
+  .text-restaurant > h3 {
+    font-size: 40px;
+    margin-top: 40px;
+  }
 
-    .text-restaurant > .description {
-        font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 70px;
-    }
+  .text-restaurant > .type-food {
+    font-size: 25px;
+    margin-top: 10px;
+  }
 
-    .text-restaurant > .feedbacks > .feedback-cards > p {
-        font-size: 18px;
+  .text-restaurant > .description {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+  }
 
-    }
+  .text-restaurant > .feedbacks > .feedback-cards > p {
+    font-size: 18px;
+  }
 
-    /* map */
-    .location > iframe {
-        width: clamp(250px, 80%, 700px);
-        height: 275px;
-        /* height: clamp(448px, 50%, 896px); */
-    }
+  /* map */
+  .location > iframe {
+    width: clamp(250px, 80%, 700px);
+    height: 275px;
+    /* height: clamp(448px, 50%, 896px); */
+  }
 
-    /* Add comment */
-    #write-review {
-        margin-inline: 40px;
-    }
+  /* Add comment */
+  #write-review {
+    margin-inline: 40px;
+  }
 
-    #write-review > input {
-        font-size: 20px;
-    }
+  #write-review > input {
+    font-size: 20px;
+  }
 
-    #write-review > textarea{
-        font-size: 20px;
-    }
+  #write-review > textarea {
+    font-size: 20px;
+  }
 }
