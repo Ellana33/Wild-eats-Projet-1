@@ -104,4 +104,14 @@
   #write-review > textarea {
     font-size: 20px;
   }
+  /* Erreur et approuv pop */
+  #write-review > #errorMsg.show {
+    height: 38px;
+    font-size: 16px;
+  }
+
+  #write-review > #approuvMsg.show {
+    height: 38px;
+    font-size: 16px;
+  }
 }
