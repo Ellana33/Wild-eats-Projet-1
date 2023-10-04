@@ -5,15 +5,15 @@ const formReview = document.querySelector("#write-review");
 // Déclaration des variables necessaire.
 let userReview = document.querySelector("#userReview");
 let contentReview = document.querySelector("#contentReview");
+let starReview = document.querySelector(".star-select");
 const submitReview = document.querySelector("#btnReview");
 
 // Déclaration des variables erreurs et validé.
-let error;
 const errorPop = document.querySelector("#errorMsg");
 const approuvPop = document.querySelector("#approuvMsg");
 
 // Ajout de la variable "inputs" qui est un tableau contenant "userReview" et "contentReview".
-let inputs = [userReview, contentReview];
+let inputs = [userReview, contentReview, starReview];
 
 
 // Verification du contenu des champs et affichage d'erreur en cas d'erreurs.
@@ -41,7 +41,7 @@ submitReview.addEventListener("click", (send)=> {
                 userReview.classList.add("yellow-stars");
                 contentReview.classList.add("feedback");
                 
-                userReview.innerHTML = "★★★ " + inputs[0].value + " :";
+                userReview.innerHTML = inputs[2].value + " " + inputs[0].value + " :";
                 contentReview.innerHTML = inputs[1].value;
                 
                 feedbackBlock.appendChild(userReview);
@@ -52,6 +52,7 @@ submitReview.addEventListener("click", (send)=> {
                 
                 console.log(inputs[0].value);
                 console.log(inputs[1].value);
+                console.log(inputs[2].value);
                 
                 // });
         }

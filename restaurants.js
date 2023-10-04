@@ -275,6 +275,16 @@ const createPage = (index) => {
                 <form id="write-review">
                     <input id="userReview" class="textContent" placeholder="Prénom, Nom *" type="text">
                     <textarea id="contentReview" class="textContent" placeholder="Rédigez votre commentaire ... *" rows="5"></textarea>
+                    <div class="star-block">
+                    <p class="text-star-select">Combien d'étoile souhaiez-vous ajouter ?</p>
+                        <select class="star-select">
+                            <option>★</option>
+                            <option>★★</option>
+                            <option>★★★</option>
+                            <option>★★★★</option>
+                            <option>★★★★★</option>
+                        </select>
+                    </div>
                     <p id="errorMsg"></p>
                     <p id="approuvMsg"></p>
                     <input id="btnReview" type="submit" value="Valider">
