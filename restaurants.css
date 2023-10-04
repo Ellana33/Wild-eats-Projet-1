@@ -142,11 +142,14 @@ body {
 
 #write-review > .star-block > .text-star-select {
     color: white;
-    width: 20%;
+    width: 30%;
 }
 
 #write-review > .star-block > .star-select {
     color: #ECC94B;
+    height: 30px;
+    /* width: 20%; */
+    padding: 5px;
     text-align: center;
     background-color: #2F827A;
     border: none;
@@ -154,29 +157,24 @@ body {
 }
 
 #write-review > .star-block > .star-select > option {
-    width: 20%;
     background-color: #2F827A;
 }
 
-/* #write-review > .star-block > .star-select > option:hover {
-    color: #2F827A;
-    background-color: #ECC94B;
-} */
-
+/* Message d'erreur et approuv */
 #write-review > #errorMsg {
     display: none;
 }
 
 #write-review > #errorMsg.show {
     display: block;
-    color: red;
-    font-size: 22px;
+    color: #3F1519;
+    font-size: 12px;
     height: 27px;
     width: 70%;
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
-    background-color: black;
+    background-color: #F7D7DA;
     border-radius: 5px;
 }
 
@@ -186,14 +184,14 @@ body {
 
 #write-review > #approuvMsg.show {
     display: block;
-    color: green;
-    font-size: 22px;
+    color: #2D4430;
+    font-size: 12px;
     height: 27px;
     width: 70%;
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
-    background-color: yellow;
+    background-color: #D5EED9;
     border-radius: 5px;
 }
 

@@ -12,7 +12,7 @@ const submitReview = document.querySelector("#btnReview");
 const errorPop = document.querySelector("#errorMsg");
 const approuvPop = document.querySelector("#approuvMsg");
 
-// Ajout de la variable "inputs" qui est un tableau contenant "userReview" et "contentReview".
+// Ajout de la variable "inputs" qui est un tableau contenant "userReview" et "contentReview"  ansi que les étoiles.
 let inputs = [userReview, contentReview, starReview];
 
 
@@ -31,8 +31,7 @@ submitReview.addEventListener("click", (send)=> {
             approuvPop.innerHTML = "Le commentaire est ajouté avec succès.";
             errorPop.classList.remove("show");
             
-            // Fonction d'ajout de commentaire.
-            // formReview.addEventListener("submit", function() {
+            // Block d'instructions pour push le commentaire.
             
                 const feedbackBlock = document.querySelector(".feedback-content");
                 userReview = document.createElement("span");
@@ -49,12 +48,6 @@ submitReview.addEventListener("click", (send)=> {
                 
                 inputs[0].value = "";
                 inputs[1].value = "";
-                
-                console.log(inputs[0].value);
-                console.log(inputs[1].value);
-                console.log(inputs[2].value);
-                
-                // });
         }
 });
 
