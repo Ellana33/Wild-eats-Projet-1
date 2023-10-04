@@ -93,13 +93,19 @@
 
     /* Add comment */
     #write-review {
-        margin-inline: 300px;
+        margin-inline: 70px;
     }
     #write-review > #errorMsg.show {
         font-size: 14px;
     }
     #write-review > #approuvMsg.show {
         font-size: 16px;
+    }
+    #write-review > input {
+        font-size: 23px;
+    }
+    #write-review > textarea {
+        font-size: 23px;
     }
 }
 

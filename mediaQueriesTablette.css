@@ -92,6 +92,14 @@
 
     /* Add comment */
     #write-review {
-        margin-inline: 100px;
+        margin-inline: 40px;
+    }
+
+    #write-review > input {
+        font-size: 20px;
+    }
+
+    #write-review > textarea{
+        font-size: 20px;
     }
 }
