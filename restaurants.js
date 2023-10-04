@@ -273,7 +273,7 @@ const createPage = (index) => {
                     </div>
                 </div>
                 <form id="write-review">
-                    <input style="font-size: 18px;" id="userReview" class="textContent" placeholder="Prénom, Nom *" type="text">
+                    <input id="userReview" class="textContent" placeholder="Prénom, Nom *" type="text">
                     <textarea id="contentReview" class="textContent" placeholder="Rédigez votre commentaire ... *" rows="5"></textarea>
                     <p id="errorMsg"></p>
                     <p id="approuvMsg"></p>
