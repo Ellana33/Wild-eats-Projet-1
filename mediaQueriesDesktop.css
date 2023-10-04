@@ -1,112 +1,108 @@
-
 /* Responsive Page Accueil et Page2. */
 @media screen and (min-width: 1200px) {
-    /* NAV */
-    nav {
-        height: 100px;
-    }
+  /* NAV */
+  nav {
+    height: 100px;
+  }
 
-    nav > .logo > img {
-        width: 100px;
-    }
+  nav > .logo > img {
+    width: 100px;
+  }
 
-    nav > .menu > a {
-        font-size: 25px;
-    }
+  nav > .menu > a {
+    font-size: 25px;
+  }
 
-    /* BODY */
-    body > main > .title {
-        height: 250px;
-    }
+  /* BODY */
+  body > main > .title {
+    height: 250px;
+  }
 
-    body > main > .title > h1 {
-        font-size: 60px;
-    }
+  body > main > .title > h1 {
+    font-size: 60px;
+  }
 
-    body > main > .title > h4 {
-        font-size: 30px;
-    }
+  body > main > .title > h4 {
+    font-size: 30px;
+  }
 
-    body > main > .banner > h3 {
-        font-size: 30px;
-    }
+  body > main > .banner > h3 {
+    font-size: 30px;
+  }
 
-    body > main > .chips__choice > .chip {
-        font-size: 20px;
-        height: 38px;
-    }
+  body > main > .chips__choice > .chip {
+    font-size: 20px;
+    height: 38px;
+  }
 
-    /* FOOTER */
+  /* FOOTER */
 
-    footer {
-        height: 150px;
-    }
+  footer {
+    height: 150px;
+  }
 
-    footer > .footer-follow, .footer-contact {
-        font-size: 22px;
-    }
-
+  footer > .footer-follow,
+  .footer-contact {
+    font-size: 22px;
+  }
 }
 
 /* Responsive Page2 > BODY */
 
 @media screen and (min-width: 1200px) {
-    
-    .text-restaurant {
-        margin-inline: 100px;
-    }
-    
-    /* img */
-    .block-img > .restaurant-card-img {
-        width: 60%;
-        height: 400px;
-        margin-block: 20px;
-    }
+  .text-restaurant {
+    margin-inline: 100px;
+  }
 
-    /* Bloc texte */
-    .text-restaurant > h3 {
-        font-size: 50px;
-        margin-top: 40px;
-    }
+  /* img */
+  .block-img > .restaurant-card-img {
+    width: 60%;
+    height: 400px;
+    margin-block: 20px;
+  }
 
-    .text-restaurant > .type-food {
-        font-size: 30px;
-        margin-top: 10px;
-    }
+  /* Bloc texte */
+  .text-restaurant > h3 {
+    font-size: 50px;
+    margin-top: 40px;
+  }
 
-    .text-restaurant > .description {
-        font-size: 23px;
-        margin-top: 10px;
-        margin-bottom: 70px;
-    }
+  .text-restaurant > .type-food {
+    font-size: 30px;
+    margin-top: 10px;
+  }
 
-    .text-restaurant > .feedbacks > .feedback-cards > p {
-        font-size: 20px;
-    }
+  .text-restaurant > .description {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+  }
 
-    /* map */
-    .location > iframe {
-        width: clamp(250px, 80%, 700px);
-        height: 300px;
-        /* height: clamp(448px, 50%, 896px); */
-    }
+  .text-restaurant > .feedbacks > .feedback-cards > p {
+    font-size: 20px;
+  }
 
-    /* Add comment */
-    #write-review {
-        margin-inline: 70px;
-    }
-    #write-review > #errorMsg.show {
-        font-size: 14px;
-    }
-    #write-review > #approuvMsg.show {
-        font-size: 16px;
-    }
-    #write-review > input {
-        font-size: 23px;
-    }
-    #write-review > textarea {
-        font-size: 23px;
-    }
+  /* map */
+  .location > iframe {
+    width: clamp(250px, 80%, 700px);
+    height: 300px;
+    /* height: clamp(448px, 50%, 896px); */
+  }
+
+  /* Add comment */
+  #write-review {
+    margin-inline: 70px;
+  }
+  #write-review > #errorMsg.show {
+    font-size: 14px;
+  }
+  #write-review > #approuvMsg.show {
+    font-size: 16px;
+  }
+  #write-review > input {
+    font-size: 23px;
+  }
+  #write-review > textarea {
+    font-size: 23px;
+  }
 }
-
-
