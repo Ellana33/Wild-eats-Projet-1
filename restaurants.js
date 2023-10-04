@@ -199,11 +199,11 @@ const listOfRestaurants = [
         note: "★★★★ 4.4",
         price: "$$",
         filterType: "Européen",
-        description: "la pizza é la vita ! Et Tripletta c’est la vie d’un quartier avec supplément d’âme, c’est ce four qui jamais ne s’éteint, cette Napolitaine rouge ou blanche toujours parfaitement cuite, ces ingrédients d’exception nés et produits en Italie.",
+        description: "La pizza é la vita ! Et Tripletta c’est la vie d’un quartier avec supplément d’âme, c’est ce four qui jamais ne s’éteint, cette Napolitaine rouge ou blanche toujours parfaitement cuite, ces ingrédients d’exception nés et produits en Italie.",
         map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.777164079108!2d-0.5776765061683115!3d44.85973735364169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5529931eaebc2f%3A0x2fd493fea28fbe3f!2sTripletta%20Chartrons!5e0!3m2!1sen!2sfr!4v1696341884179!5m2!1sen!2sfr",
-        feedback: "Tibo Inshape : \"Repas très satisfaisant, le service était plutot pas mal je dirais, nous sommes tombés sur un serveur très rapide, je recommande!\"",
+        feedback: ["Tibo Inshape : \"Repas très satisfaisant, le service était plutot pas mal je dirais, nous sommes tombés sur un serveur très rapide, je recommande!\"",
                 "Margot Robbie : \"Je me suis régaler, j'avais l'impression d'être en Italie. Je reviendrais volontier!\"",
-                "Cole Sprouse : \"J'ai ramené toute ma famille et je ne suis pas déçu! Les sauces sont incroyables, bravo a Tripletta!\""
+                "Cole Sprouse : \"J'ai ramené toute ma famille et je ne suis pas déçu! Les sauces sont incroyables, bravo a Tripletta!\""]
     },
     {
         name: "Le Jardin Pêcheur",
