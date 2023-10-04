@@ -125,10 +125,12 @@ body {
 #write-review > input {
     height: 25px;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 #write-review > textarea {
     font-family: 'Space Mono', monospace;
+    font-size: 20px;
     resize: none;
     margin-bottom: 20px;
 }
