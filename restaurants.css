@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,700");
+
+body {
+  font-family: "Space Mono", monospace;
+}
+
+.test {
+  background-color: #1a202c;
+}
+
+.test > img {
+  display: flex;
+  height: 150px;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.test > .star,
+.price {
+  margin-inline: 30px;
+}
+
+.test > .price {
+  float: right;
+}
+
+.title-restaurant,
+.type-food,
+.description {
+  color: white;
+  margin-inline: 30px;
+}
+
+.description {
+  font-size: 0.813rem;
+  margin-top: 5px;
+  margin-bottom: 45px;
+}
+
+.star {
+  margin-left: 30px;
+}
+
+.price {
+  float: right;
+}
+
+.yellow-stars {
+  color: #ecc94b;
+}
+
+.feedbacks h3 {
+  color: white;
+  margin-inline: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: 0.813rem;
+  margin-top: 10px;
+  padding: 5px 0;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.restaurant-card-img {
+  display: flex;
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  margin-block: 5px;
+}
+
+.feedbacks {
+  margin-inline: 30px;
+}
+
+.feedbacks > .feedback-cards {
+  display: block;
+  color: white;
+  margin-inline: 30px;
+}
+
+.feedbacks > .feedback-cards > .yellow-stars {
+  font-weight: bold;
+}
+
+.feedbacks > .feedback-cards > .feedback-content > .feedback {
+  background-color: #2f827a;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.text-restaurant > h3 {
+  margin-top: 20px;
+}
+
+.text-restaurant > .type-food {
+  margin-top: 5px;
+}
+/* Block .test */
+
+/* Add comment */
+#write-review {
+  display: flex;
+  margin-top: 50px;
+  margin-inline: 20px;
+  flex-direction: column;
+}
+
+#write-review > input {
+  font-family: "Space Mono", monospace;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+#write-review > input {
+  height: 25px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+#write-review > textarea {
+  font-family: "Space Mono", monospace;
+  font-size: 13px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+/* Liste Étoile */
+#write-review > .star-block {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#write-review > .star-block > .text-star-select {
+  color: white;
+  width: 30%;
+}
+
+#write-review > .star-block > .star-select {
+  color: #ecc94b;
+  height: 30px;
+  /* width: 20%; */
+  padding: 5px;
+  text-align: center;
+  background-color: #2f827a;
+  border: none;
+  border-radius: 10px;
+}
+
+#write-review > .star-block > .star-select > option {
+  background-color: #2f827a;
+}
+
+/* Message d'erreur et approuv */
+#write-review > #errorMsg {
+  display: none;
+}
+
+#write-review > #errorMsg.show {
+  display: block;
+  color: #3f1519;
+  font-size: 12px;
+  height: 27px;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: #f7d7da;
+  border-radius: 5px;
+}
+
+#write-review > #approuvMsg {
+  display: none;
+}
+
+#write-review > #approuvMsg.show {
+  display: block;
+  color: #2d4430;
+  font-size: 12px;
+  height: 27px;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: #d5eed9;
+  border-radius: 5px;
+}
+
+#write-review > #btnReview {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: #2f827a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#write-review > #userReview,
+textarea {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
