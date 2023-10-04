@@ -113,7 +113,6 @@ body {
     margin-top: 50px;
     margin-inline: 20px;
     flex-direction: column;
-    /* background-color: red; */
 }
 
 #write-review > input {
@@ -134,6 +133,35 @@ body {
     resize: none;
     margin-bottom: 20px;
 }
+
+/* Liste Étoile */
+#write-review > .star-block {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#write-review > .star-block > .text-star-select {
+    color: white;
+    width: 20%;
+}
+
+#write-review > .star-block > .star-select {
+    color: #ECC94B;
+    text-align: center;
+    background-color: #2F827A;
+    border: none;
+    border-radius: 10px;
+}
+
+#write-review > .star-block > .star-select > option {
+    width: 20%;
+    background-color: #2F827A;
+}
+
+/* #write-review > .star-block > .star-select > option:hover {
+    color: #2F827A;
+    background-color: #ECC94B;
+} */
 
 #write-review > #errorMsg {
     display: none;
