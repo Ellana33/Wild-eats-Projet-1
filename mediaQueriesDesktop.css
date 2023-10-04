@@ -95,5 +95,12 @@
     #write-review {
         margin-inline: 300px;
     }
+    #write-review > #errorMsg.show {
+        font-size: 14px;
+    }
+    #write-review > #approuvMsg.show {
+        font-size: 16px;
+    }
 }
+
 
