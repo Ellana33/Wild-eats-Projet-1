@@ -25,7 +25,7 @@ body {
     float: right;
 }
 
-.title-restaurant, .type-food, .description, .feedback {
+.title-restaurant, .type-food, .description {
     color: white;
     margin-inline: 30px;
 }
@@ -33,6 +33,7 @@ body {
 .description {
     font-size: 0.813rem;
     margin-top: 5px;
+    margin-bottom: 45px;
 }
 
 .star {
@@ -57,7 +58,8 @@ body {
 .feedback {
     font-style: italic;
     font-size: 0.813rem;
-    margin-top: 5px;
+    margin-top: 10px;
+    padding: 5px 0;
 }
 
 .location {
@@ -70,16 +72,116 @@ body {
 .restaurant-card-img {
     display: flex;
     width: 80%;
-    height: auto;
+    height: 300px;
     margin: auto;
+    margin-block: 5px;
+}
+
+.feedbacks {
+    margin-inline: 30px;
 }
 
 .feedbacks > .feedback-cards {
-    background-color: #2F827A;
-    border-radius: 10px;
-    margin-block: 20px;
+    display: block;
+    color: white;
+    margin-inline: 30px;
 }
 
-.feedbacks > .feedback-cards > p {
-    margin-left: 10px;
+.feedbacks > .feedback-cards > .yellow-stars {
+    font-weight: bold;
+}
+
+.feedbacks > .feedback-cards > .feedback-content > .feedback {
+    background-color: #2F827A;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.text-restaurant > h3 {
+    margin-top: 20px;
+}
+
+.text-restaurant > .type-food {
+    margin-top: 5px;
+}
+/* Block .test */
+
+/* Add comment */
+#write-review {
+    display: flex;
+    margin-top: 50px;
+    margin-inline: 20px;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+#write-review > input {
+    font-family: 'Space Mono', monospace;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+#write-review > input {
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+#write-review > textarea {
+    font-family: 'Space Mono', monospace;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+#write-review > #errorMsg {
+    display: none;
+}
+
+#write-review > #errorMsg.show {
+    display: block;
+    color: red;
+    font-size: 22px;
+    height: 27px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#write-review > #approuvMsg {
+    display: none;
+}
+
+#write-review > #approuvMsg.show {
+    display: block;
+    color: green;
+    font-size: 22px;
+    height: 27px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+#write-review > #btnReview {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: #2F827A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#write-review > #userReview, textarea {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
 }
