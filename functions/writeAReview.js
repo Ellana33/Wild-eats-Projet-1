@@ -2,6 +2,8 @@
 // Déclaration de la variable "formReview" et assignation à l'ID "write-review".
 const formReview = document.querySelector("#write-review");
 
+let arrayRestaurant = [];
+
 // Déclaration des variables necessaire.
 let userReview = document.querySelector("#userReview");
 let contentReview = document.querySelector("#contentReview");
@@ -11,6 +13,11 @@ const submitReview = document.querySelector("#btnReview");
 // Déclaration des variables erreurs et validé.
 const errorPop = document.querySelector("#errorMsg");
 const approuvPop = document.querySelector("#approuvMsg");
+
+// ID Restaurants.
+const urlParamsTest = new URL(window.location.href);
+console.log(urlParamsTest.searchParams.get("id"));
+// const restaurantId = urlParams.get("id");
 
 // Ajout de la variable "inputs" qui est un tableau contenant "userReview" et "contentReview"  ansi que les étoiles.
 let inputs = [userReview, contentReview, starReview];
@@ -49,7 +56,3 @@ submitReview.addEventListener("click",  function writeAReviewContent(send) {
     inputs[1].value = "";
   }
 });
-
-export function test() {
-  console.log("Test.");
-}
