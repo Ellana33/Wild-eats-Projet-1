@@ -67,7 +67,7 @@ const listOfRestaurants = [
     filterType: "Français",
     description:
       "Le concept de bistro lancé par Marc Vanhove perpétue cet esprit qui met à l'honneur des plats authentiques, propices à des repas entre amis. Selon Jean-Luc Petitrenaud, critique gastronomique réputé, la cuisine de bistro est “une cuisine de couisse, comme vouée au temps elle est spontanée, vivante",
-    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8911.689302679866!2d-0.574214647141527!3d44.875591263096524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5529691f32330f%3A0x567e9ec74962da1e!2sBistro%20R%C3%A9gent%20Bordeaux%20Lac!5e0!3m2!1sfr!2sfr!4v1695999824304!5m2!1sfr!2sfr",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11309.958886101018!2d-0.5599329378093392!3d44.87268198861629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55288c668dd797%3A0xd8cab5c3211b4978!2sLe%20Bistro%20R%C3%A9gent!5e0!3m2!1sfr!2sfr!4v1696501967623!5m2!1sfr!2sfr",
     feedback: [
       "Panet Depoisson :",
       "Excellent petit bistrot, à la bonne franquette. Le personnel est très aimable et attentionné.Tout les plats sont simples et bons.Des desserts de qualité.",
