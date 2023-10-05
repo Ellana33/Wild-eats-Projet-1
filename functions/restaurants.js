@@ -1,346 +1,348 @@
-const restaurantsFeedbacks = [
-  {
-    restaurantId: 1,
-    feedback: [
-      {
-        userName: "Nina Tmosphère :",
-        userComment:
-          "Un des meilleurs restaurant italien à Bordeaux. Habitant à 45 min de votre restaurant, nous sommes à chaque fois impatient de venir y déguster vos plats ...",
-      },
-      {
-        userName: "Fabrice Denice :",
-        userComment:
-          "Bonne cuisine italienne, même si nos plats avaient certains bémols(les pâtes a la truffe manque de goût de truffe et les pâtes aux anchois trop salées.) Les désserts ont rattrapés le repas car très bons (tiramisu sans alcool). Le restaurat propose des portions XL pour les plus gourmand ! ...",
-      },
-      {
-        userName: "Carine Ossérosse :",
-        userComment:
-          "En sortant de la visite des bassins des lumières, à 14h, superbe déjeuner tardif (aucun soucis pour l'arrivée tardive) Accueil sympatique, choix d'une pizza vegetale, de pasta amalfi et de pasta modena : les trois sont succulent et copieux. ...",
-      },
-    ],
-  },
-  {
-    restaurantId: 2,
-    feedback: [
-      {
-        userName: "Solène Deverre :",
-        userComment:
-          "12,90€ pour des flammekueches à volonté : un rapport qualité-prix imbattable, surtout qu'elles sont finement délicieuses !! On en a pris 5 tournées à 2 et on s'est vraiment régalées. Bons et réconfortant.",
-      },
-      {
-        userName: "Logan Istan :",
-        userComment:
-          "Excellent rapport qualité prix. Nous avons opté pour la formule à volonté à partager au prix de 17€90 inculant également un dessert au choix. Les serveuses s'adaptent à vos demandes. En effet, nous voulions goûter un maximum de saveurs, ...",
-      },
-      {
-        userName: "Julien Plusun :",
-        userComment:
-          "Un restaurant sympatique dans une lieu calme! La formule à volonté permet de tester plusieurs flamenkuches ce qui est intéressant. Celles que j'ai pu tester, salées comme sucrées, étaient très bonnes ! ...",
-      },
-    ],
-  },
-  {
-    restaurantId: 3,
-    feedback: [
-      {
-        userName: "Marion Nouvite :",
-        userComment:
-          "Accueil très chaleureux, lieu très propre, nouvelle vaisselle écologique, ballond animaliers offerts aux enfants ainsi que des sachets de bonbons! Du jamais vu!",
-      },
-      {
-        userName: "Julien Ternette :",
-        userComment:
-          "L'équipière du McDo, Isabelle, à ete absolument gentille et agréable lorsque je suis venu déjeuner ce midi. Service impeccable, prise de commande à la caisse pour me faire gagner du temps, rapide, et puis tout simplementfort aimable !",
-      },
-      {
-        userName: "Malika Siette :",
-        userComment:
-          "Merci à Isabelle pour cet après-midi d'anniversaire. Mon fils ainsi que ses copains ont un super moment pour ses 5 ans. Le seul hic dommage ont voit que le temps c'est de l'argent...",
-      },
-    ],
-  },
-  {
-    restaurantId: 4,
-    feedback: [
-      {
-        userName: "Nina Tmosphère :",
-        userComment:
-          "Excellent petit bistrot, à la bonne franquette. Le personnel est très aimable et attentionné.Tout les plats sont simples et bons.Des desserts de qualité.",
-      },
-      {
-        userName: "Jean Peuxplus :",
-        userComment:
-          "Venus en famille nous avons partagé un moment autour d un repas a cette adresse, belle découverte pour cette chaine que nous connaissions déjà.",
-      },
-      {
-        userName: "Nassime Depin :",
-        userComment:
-          "Son emplacement a lui seul vous met dans le bain. avec une vue sur la garonne très agréable en période estivale",
-      },
-    ],
-  },
-  {
-    restaurantId: 5,
-    feedback: [
-      {
-        userName: "Nina Tmosphère :",
-        userComment:
-          "Très agréable restaurant où l'accueil est particulièrement chalereux ! On y mange de très bonnes choses de grande qualité et fraîcheur ! J'adore y aller ! Je recommande chaudement.",
-      },
-      {
-        userName: "Christian Delégume :",
-        userComment:
-          "Une équipe jeune, sympathique et accueillante. Le concept est simple et redoutablement efficace. Pour ne rien gâcher c'est hyper bon. Si vous hésitez, vous avez tort. Allez-y et régalez vous. C'est aussi simple que cela.",
-      },
-      {
-        userName: "Aurore Movie :",
-        userComment:
-          "Très bien! La serveuse était agréable et patiente, et la nourriture fraîche et savoureuse!",
-      },
-    ],
-  },
-  {
-    restaurantId: 6,
-    feedback: [
-      {
-        userName: "Noa de Cajou :",
-        userComment:
-          "Très bon moment de détente après la visite de la base sous-marine. Crêpe délicieuse et bière de la région bordelaise.",
-      },
-      {
-        userName: "Silvano Ptique :",
-        userComment:
-          "Bonne adresse pour déguster des crêpes et des galettes avec du fromage ou des douceurs. Agréable moment de détente et de restauration après la visite de la lumière du bassin.",
-      },
-      {
-        userName: "Jean Saigne :",
-        userComment:
-          "Joli kiosque avec des produits bio, un moment de détente en mangeant une crêpe ou des galettes bio avant ou après le musée. Des gens jeunes et gentils.",
-      },
-    ],
-  },
-  {
-    restaurantId: 7,
-    feedback: [
-      {
-        userName: "Kevin Othèque :",
-        userComment:
-          "Un très belle endroit avec un personnel sourriant et efficace, j'ai pue prendre le Spicy burger qui était exellent.",
-      },
-      {
-        userName: "Aymeric Oray :",
-        userComment:
-          "Depuis le temps qu'on voulait y venir, c'est fait et pas de regrets et belle découverte. Accueil au top, service des nombreux serveurs, souriant et aggréable.",
-      },
-      {
-        userName: "Hervé Stibule :",
-        userComment: "Cadre sympa et service attentionné.",
-      },
-    ],
-  },
-  {
-    restaurantId: 8,
-    feedback: [
-      {
-        userName: "Benjamin Sanspouce :",
-        userComment:
-          "De passage lors de notre périple a Bordeaux nous avons par hasard croisé cette établissement.",
-      },
-      {
-        userName: "Daren Roi :",
-        userComment:
-          "Nous avons manger copieusement : portion généreuse, aliments frais mais nous regretter le manque de saveur. Le goût est vraiment trop occidentalisé donc quand on aime les épices indiennes on est déçu.",
-      },
-      {
-        userName: "Mélina Ture :",
-        userComment:
-          "Une expérience incroyable, le services était top, le personnel très professionnel mais intime avec ses clients et que dire sur la nouriture ... UN VRAI DÉLICE !",
-      },
-    ],
-  },
-  {
-    restaurantId: 9,
-    feedback: [
-      {
-        userName: "Franck Ofolie :",
-        userComment:
-          "Une excellente découverte. Un acceuil professionnel et souriant. Une équipe dynamique, agréable et complice. Le tartare de boeuf était parfait ...",
-      },
-      {
-        userName: "Emma Voiture :",
-        userComment:
-          "Serveurs au top, acceuillants, souriants, serviables, rien à redire ! Très bonne salade César. Dommage pour les profiteroles qui ne sont plus à la carte, nous avions eu la chance de les goûter la fois dernière.",
-      },
-      {
-        userName: "Thomas Moto :",
-        userComment:
-          "Belle et grande salle bien décorée avec une grande terrasse au bord du Bassin à Flots. Le cadre est top! L'acceuil est chaleureux direct en passant la porte. L'équipe est très serviable et polis.",
-      },
-    ],
-  },
-  {
-    restaurantId: 10,
-    feedback: [
-      {
-        userName: "Thor Pille :",
-        userComment:
-          "Très bon palts et carte avec du choix. Pas mal de végétarien. Serveur sympatique et aux petits soins.",
-      },
-      {
-        userName: "Alex Terrieur :",
-        userComment:
-          "Découvert après une sortie au bassin des lumières, ce petit restaurant est superbe avec une décoration moderne et épuré.",
-      },
-      {
-        userName: "Carry Bou :",
-        userComment:
-          "Exellente expérience comme à chaque fois que l'on commande chez vous <3.",
-      },
-    ],
-  },
-  {
-    restaurantId: 11,
-    feedback: [
-      {
-        userName: "Élodie Manche :",
-        userComment: "Grosse decéption, beaucoup de monde et 17€ à l'entrée.",
-      },
-      {
-        userName: "Vincent Time :",
-        userComment:
-          "J'avais pas envie parce que je suis une tête de mûle mais Julien nous à tellement accuillis !!!!! Nous étions 30 mais il souviendrons des L5 et nous nous nous souviendrons de lui et du repas. Nous nous sommmes régalé, le repas délicieux, le vin parfait et Julien extra-ordinaire !!!!! Allez-y vite, Merci Julien !",
-      },
-      {
-        userName: "Marie Golade :",
-        userComment:
-          "Je n'ai pas profiter de la nouriture au vue de l'heur. Mais pour la partie club / Boite de nuit je dois dire que j'ai beaucoup aimé l'ambiance, Le cadre, la vue etc ...",
-      },
-    ],
-  },
-  {
-    restaurantId: 12,
-    feedback: [
-      {
-        userName: "Siryl DeRay :",
-        userComment:
-          "Ambiance et vue sympa mais carte restaurant ne correspond pas à celle du web ni a l'entrée du restaurant. Bref dommage.",
-      },
-      {
-        userName: "Mathieu Sard :",
-        userComment: "Très bon repas, ambiance festive après 23h",
-      },
-      {
-        userName: "Quentin Hommevient :",
-        userComment:
-          "Portier misérable. Très désagréable et impolie. Impossible de distinguer si il s'agit d'un client ou un membre du personnel, surtout quand ce dernier discute avec une femme au lieu d'acceuillir ses clients.",
-      },
-    ],
-  },
-  {
-    restaurantId: 13,
-    feedback: [
-      {
-        userName: "Hassena Teur :",
-        userComment: "Boris nous a accueilli malgré notre retard conséquent",
-      },
-      {
-        userName: "Logane Iversaire:",
-        userComment:
-          "Venus en famille nous avons partagé un moment autour d un repas a cette adresse, belle découverte pour cette chaine que nous connaissions déjà.",
-      },
-      {
-        userName: "Megane Eutron:",
-        userComment:
-          "Son emplacement a lui seul vous met dans le bain. avec une vue sur la garonne très agréable en période estivale",
-      },
-    ],
-  },
-  {
-    restaurantId: 14,
-    feedback: [
-      {
-        userName: "Alain Terrieur :",
-        userComment:
-          "Super resto, bien mangé, partis la peau du ventre bien tendus.",
-      },
-      {
-        userName: "Marie Time :",
-        userComment:
-          "J'étais à coté de la personne peau du ventre bien tendu, je suis d'accord avec lui.",
-      },
-      {
-        userName: "Louis Labrocante :",
-        userComment:
-          "Super rencontre avec Mr terrieur et Mme Time, Je recommande.",
-      },
-    ],
-  },
-  {
-    restaurantId: 15,
-    feedback: [
-      {
-        userName: "Sandrine Osor :",
-        userComment:
-          "Très bonne pizza, service rapide. Dommage qu'il n'y ait pas plus de plats en dehors des pizza.",
-      },
-      {
-        userName: "Maiwenn Dit :",
-        userComment:
-          "Pizza excellente, très copieuse. Bon service avec une équipe à l'écoute avec de bon conseils et agréable.",
-      },
-      {
-        userName: "Bernadette Tente :",
-        userComment:
-          "Une super découverte ! Déjà un an sue je viens déguster différentes pizza chez vous. Elles sont généreuses et délicieuses. Et la burrata ... Cet été, le soir j'ai apprécié votre rooftop. Autre atout pour ce restaurant en plus de sa cuisine, une ambiance sympathique et un service efficace. Merci à toute l'équipe. C'est un plaisir pour nous. A bientôt.",
-      },
-    ],
-  },
-  {
-    restaurantId: 16,
-    feedback: [
-      {
-        userName: "Quentin Toint :",
-        userComment:
-          "Excellent restaurant, de la réservation au dessert ! Personnel très sympathique, très belle mise en avant des capacités du personnel, l'histoire qui se cache derrière ce restaurant est belle et donne envie de voir ce genre de restaurant plus souvent. Cuisine délicieuse mais un peu cher tout de même. Nous n'avons pas pu profiter de la terrasse à l'étage étant fermée,  nous avons cependant passé un agréable moment ! Je recommande !",
-      },
-      {
-        userName: "Celine Dion:",
-        userComment:
-          "Très bon accueil, en salle tous les serveurs sont extrêmement bienveillants souriants et agréables. Les plats étaient très très bons, bien présentés et copieux. Nous avons passé un bon momment dans ce restaurant. Merci ! (Et merci aussi pour la bougie sur le dessert).",
-      },
-      {
-        userName: "Anne Uel :",
-        userComment:
-          "Nous avons réservé au dernier moment pour 8 personnes et avons été reçu avec bienveillance. La cuisine est délicieuse et le service est impeccable et attentionné. Un grand merci à tout le personnel pour ce très bon moment passé dans votre restaurant !",
-      },
-    ],
-  },
-  {
-    restaurantId: 17,
-    feedback: [
-      {
-        userName: "Celine Debus :",
-        userComment:
-          "Je recommande vivement, un endroit chaleureux, une superbe déco et de très bons plats. Le brunch est fabuleux.",
-      },
-      {
-        userName: "Fabien Etvous :",
-        userComment:
-          "Nous avons passé un très bon moment au Café Maritime. Nous sommes arrivés en fin de service et nous avons été très bien accueillis. Nous avons très bien mangé. C'est un lieu que nous apprécions !!",
-      },
-      {
-        userName: "Vincent Tire :",
-        userComment:
-          "Très bel endroit pour déjeuner. Le menu avec entrée plat dessert à 22 €. Même pour un menu, les repas sont de qualité. Il ne faut pas hésiter",
-      },
-    ],
-  },
-];
+let restaurantsFeedbacks;
 
 if (!localStorage.getItem("userReview")) {
   console.log("Il n'y a rien dans le local storage on va donc le remplir.");
+  restaurantsFeedbacks = [
+    {
+      restaurantId: 1,
+      feedback: [
+        {
+          userName: "Nina Tmosphère :",
+          userComment:
+            "Un des meilleurs restaurant italien à Bordeaux. Habitant à 45 min de votre restaurant, nous sommes à chaque fois impatient de venir y déguster vos plats ...",
+        },
+        {
+          userName: "Fabrice Denice :",
+          userComment:
+            "Bonne cuisine italienne, même si nos plats avaient certains bémols(les pâtes a la truffe manque de goût de truffe et les pâtes aux anchois trop salées.) Les désserts ont rattrapés le repas car très bons (tiramisu sans alcool). Le restaurat propose des portions XL pour les plus gourmand ! ...",
+        },
+        {
+          userName: "Carine Ossérosse :",
+          userComment:
+            "En sortant de la visite des bassins des lumières, à 14h, superbe déjeuner tardif (aucun soucis pour l'arrivée tardive) Accueil sympatique, choix d'une pizza vegetale, de pasta amalfi et de pasta modena : les trois sont succulent et copieux. ...",
+        },
+      ],
+    },
+    {
+      restaurantId: 2,
+      feedback: [
+        {
+          userName: "Solène Deverre :",
+          userComment:
+            "12,90€ pour des flammekueches à volonté : un rapport qualité-prix imbattable, surtout qu'elles sont finement délicieuses !! On en a pris 5 tournées à 2 et on s'est vraiment régalées. Bons et réconfortant.",
+        },
+        {
+          userName: "Logan Istan :",
+          userComment:
+            "Excellent rapport qualité prix. Nous avons opté pour la formule à volonté à partager au prix de 17€90 inculant également un dessert au choix. Les serveuses s'adaptent à vos demandes. En effet, nous voulions goûter un maximum de saveurs, ...",
+        },
+        {
+          userName: "Julien Plusun :",
+          userComment:
+            "Un restaurant sympatique dans une lieu calme! La formule à volonté permet de tester plusieurs flamenkuches ce qui est intéressant. Celles que j'ai pu tester, salées comme sucrées, étaient très bonnes ! ...",
+        },
+      ],
+    },
+    {
+      restaurantId: 3,
+      feedback: [
+        {
+          userName: "Marion Nouvite :",
+          userComment:
+            "Accueil très chaleureux, lieu très propre, nouvelle vaisselle écologique, ballond animaliers offerts aux enfants ainsi que des sachets de bonbons! Du jamais vu!",
+        },
+        {
+          userName: "Julien Ternette :",
+          userComment:
+            "L'équipière du McDo, Isabelle, à ete absolument gentille et agréable lorsque je suis venu déjeuner ce midi. Service impeccable, prise de commande à la caisse pour me faire gagner du temps, rapide, et puis tout simplementfort aimable !",
+        },
+        {
+          userName: "Malika Siette :",
+          userComment:
+            "Merci à Isabelle pour cet après-midi d'anniversaire. Mon fils ainsi que ses copains ont un super moment pour ses 5 ans. Le seul hic dommage ont voit que le temps c'est de l'argent...",
+        },
+      ],
+    },
+    {
+      restaurantId: 4,
+      feedback: [
+        {
+          userName: "Nina Tmosphère :",
+          userComment:
+            "Excellent petit bistrot, à la bonne franquette. Le personnel est très aimable et attentionné.Tout les plats sont simples et bons.Des desserts de qualité.",
+        },
+        {
+          userName: "Jean Peuxplus :",
+          userComment:
+            "Venus en famille nous avons partagé un moment autour d un repas a cette adresse, belle découverte pour cette chaine que nous connaissions déjà.",
+        },
+        {
+          userName: "Nassime Depin :",
+          userComment:
+            "Son emplacement a lui seul vous met dans le bain. avec une vue sur la garonne très agréable en période estivale",
+        },
+      ],
+    },
+    {
+      restaurantId: 5,
+      feedback: [
+        {
+          userName: "Nina Tmosphère :",
+          userComment:
+            "Très agréable restaurant où l'accueil est particulièrement chalereux ! On y mange de très bonnes choses de grande qualité et fraîcheur ! J'adore y aller ! Je recommande chaudement.",
+        },
+        {
+          userName: "Christian Delégume :",
+          userComment:
+            "Une équipe jeune, sympathique et accueillante. Le concept est simple et redoutablement efficace. Pour ne rien gâcher c'est hyper bon. Si vous hésitez, vous avez tort. Allez-y et régalez vous. C'est aussi simple que cela.",
+        },
+        {
+          userName: "Aurore Movie :",
+          userComment:
+            "Très bien! La serveuse était agréable et patiente, et la nourriture fraîche et savoureuse!",
+        },
+      ],
+    },
+    {
+      restaurantId: 6,
+      feedback: [
+        {
+          userName: "Noa de Cajou :",
+          userComment:
+            "Très bon moment de détente après la visite de la base sous-marine. Crêpe délicieuse et bière de la région bordelaise.",
+        },
+        {
+          userName: "Silvano Ptique :",
+          userComment:
+            "Bonne adresse pour déguster des crêpes et des galettes avec du fromage ou des douceurs. Agréable moment de détente et de restauration après la visite de la lumière du bassin.",
+        },
+        {
+          userName: "Jean Saigne :",
+          userComment:
+            "Joli kiosque avec des produits bio, un moment de détente en mangeant une crêpe ou des galettes bio avant ou après le musée. Des gens jeunes et gentils.",
+        },
+      ],
+    },
+    {
+      restaurantId: 7,
+      feedback: [
+        {
+          userName: "Kevin Othèque :",
+          userComment:
+            "Un très belle endroit avec un personnel sourriant et efficace, j'ai pue prendre le Spicy burger qui était exellent.",
+        },
+        {
+          userName: "Aymeric Oray :",
+          userComment:
+            "Depuis le temps qu'on voulait y venir, c'est fait et pas de regrets et belle découverte. Accueil au top, service des nombreux serveurs, souriant et aggréable.",
+        },
+        {
+          userName: "Hervé Stibule :",
+          userComment: "Cadre sympa et service attentionné.",
+        },
+      ],
+    },
+    {
+      restaurantId: 8,
+      feedback: [
+        {
+          userName: "Benjamin Sanspouce :",
+          userComment:
+            "De passage lors de notre périple a Bordeaux nous avons par hasard croisé cette établissement.",
+        },
+        {
+          userName: "Daren Roi :",
+          userComment:
+            "Nous avons manger copieusement : portion généreuse, aliments frais mais nous regretter le manque de saveur. Le goût est vraiment trop occidentalisé donc quand on aime les épices indiennes on est déçu.",
+        },
+        {
+          userName: "Mélina Ture :",
+          userComment:
+            "Une expérience incroyable, le services était top, le personnel très professionnel mais intime avec ses clients et que dire sur la nouriture ... UN VRAI DÉLICE !",
+        },
+      ],
+    },
+    {
+      restaurantId: 9,
+      feedback: [
+        {
+          userName: "Franck Ofolie :",
+          userComment:
+            "Une excellente découverte. Un acceuil professionnel et souriant. Une équipe dynamique, agréable et complice. Le tartare de boeuf était parfait ...",
+        },
+        {
+          userName: "Emma Voiture :",
+          userComment:
+            "Serveurs au top, acceuillants, souriants, serviables, rien à redire ! Très bonne salade César. Dommage pour les profiteroles qui ne sont plus à la carte, nous avions eu la chance de les goûter la fois dernière.",
+        },
+        {
+          userName: "Thomas Moto :",
+          userComment:
+            "Belle et grande salle bien décorée avec une grande terrasse au bord du Bassin à Flots. Le cadre est top! L'acceuil est chaleureux direct en passant la porte. L'équipe est très serviable et polis.",
+        },
+      ],
+    },
+    {
+      restaurantId: 10,
+      feedback: [
+        {
+          userName: "Thor Pille :",
+          userComment:
+            "Très bon palts et carte avec du choix. Pas mal de végétarien. Serveur sympatique et aux petits soins.",
+        },
+        {
+          userName: "Alex Terrieur :",
+          userComment:
+            "Découvert après une sortie au bassin des lumières, ce petit restaurant est superbe avec une décoration moderne et épuré.",
+        },
+        {
+          userName: "Carry Bou :",
+          userComment:
+            "Exellente expérience comme à chaque fois que l'on commande chez vous <3.",
+        },
+      ],
+    },
+    {
+      restaurantId: 11,
+      feedback: [
+        {
+          userName: "Élodie Manche :",
+          userComment: "Grosse decéption, beaucoup de monde et 17€ à l'entrée.",
+        },
+        {
+          userName: "Vincent Time :",
+          userComment:
+            "J'avais pas envie parce que je suis une tête de mûle mais Julien nous à tellement accuillis !!!!! Nous étions 30 mais il souviendrons des L5 et nous nous nous souviendrons de lui et du repas. Nous nous sommmes régalé, le repas délicieux, le vin parfait et Julien extra-ordinaire !!!!! Allez-y vite, Merci Julien !",
+        },
+        {
+          userName: "Marie Golade :",
+          userComment:
+            "Je n'ai pas profiter de la nouriture au vue de l'heur. Mais pour la partie club / Boite de nuit je dois dire que j'ai beaucoup aimé l'ambiance, Le cadre, la vue etc ...",
+        },
+      ],
+    },
+    {
+      restaurantId: 12,
+      feedback: [
+        {
+          userName: "Siryl DeRay :",
+          userComment:
+            "Ambiance et vue sympa mais carte restaurant ne correspond pas à celle du web ni a l'entrée du restaurant. Bref dommage.",
+        },
+        {
+          userName: "Mathieu Sard :",
+          userComment: "Très bon repas, ambiance festive après 23h",
+        },
+        {
+          userName: "Quentin Hommevient :",
+          userComment:
+            "Portier misérable. Très désagréable et impolie. Impossible de distinguer si il s'agit d'un client ou un membre du personnel, surtout quand ce dernier discute avec une femme au lieu d'acceuillir ses clients.",
+        },
+      ],
+    },
+    {
+      restaurantId: 13,
+      feedback: [
+        {
+          userName: "Hassena Teur :",
+          userComment: "Boris nous a accueilli malgré notre retard conséquent",
+        },
+        {
+          userName: "Logane Iversaire:",
+          userComment:
+            "Venus en famille nous avons partagé un moment autour d un repas a cette adresse, belle découverte pour cette chaine que nous connaissions déjà.",
+        },
+        {
+          userName: "Megane Eutron:",
+          userComment:
+            "Son emplacement a lui seul vous met dans le bain. avec une vue sur la garonne très agréable en période estivale",
+        },
+      ],
+    },
+    {
+      restaurantId: 14,
+      feedback: [
+        {
+          userName: "Alain Terrieur :",
+          userComment:
+            "Super resto, bien mangé, partis la peau du ventre bien tendus.",
+        },
+        {
+          userName: "Marie Time :",
+          userComment:
+            "J'étais à coté de la personne peau du ventre bien tendu, je suis d'accord avec lui.",
+        },
+        {
+          userName: "Louis Labrocante :",
+          userComment:
+            "Super rencontre avec Mr terrieur et Mme Time, Je recommande.",
+        },
+      ],
+    },
+    {
+      restaurantId: 15,
+      feedback: [
+        {
+          userName: "Sandrine Osor :",
+          userComment:
+            "Très bonne pizza, service rapide. Dommage qu'il n'y ait pas plus de plats en dehors des pizza.",
+        },
+        {
+          userName: "Maiwenn Dit :",
+          userComment:
+            "Pizza excellente, très copieuse. Bon service avec une équipe à l'écoute avec de bon conseils et agréable.",
+        },
+        {
+          userName: "Bernadette Tente :",
+          userComment:
+            "Une super découverte ! Déjà un an sue je viens déguster différentes pizza chez vous. Elles sont généreuses et délicieuses. Et la burrata ... Cet été, le soir j'ai apprécié votre rooftop. Autre atout pour ce restaurant en plus de sa cuisine, une ambiance sympathique et un service efficace. Merci à toute l'équipe. C'est un plaisir pour nous. A bientôt.",
+        },
+      ],
+    },
+    {
+      restaurantId: 16,
+      feedback: [
+        {
+          userName: "Quentin Toint :",
+          userComment:
+            "Excellent restaurant, de la réservation au dessert ! Personnel très sympathique, très belle mise en avant des capacités du personnel, l'histoire qui se cache derrière ce restaurant est belle et donne envie de voir ce genre de restaurant plus souvent. Cuisine délicieuse mais un peu cher tout de même. Nous n'avons pas pu profiter de la terrasse à l'étage étant fermée,  nous avons cependant passé un agréable moment ! Je recommande !",
+        },
+        {
+          userName: "Celine Dion:",
+          userComment:
+            "Très bon accueil, en salle tous les serveurs sont extrêmement bienveillants souriants et agréables. Les plats étaient très très bons, bien présentés et copieux. Nous avons passé un bon momment dans ce restaurant. Merci ! (Et merci aussi pour la bougie sur le dessert).",
+        },
+        {
+          userName: "Anne Uel :",
+          userComment:
+            "Nous avons réservé au dernier moment pour 8 personnes et avons été reçu avec bienveillance. La cuisine est délicieuse et le service est impeccable et attentionné. Un grand merci à tout le personnel pour ce très bon moment passé dans votre restaurant !",
+        },
+      ],
+    },
+    {
+      restaurantId: 17,
+      feedback: [
+        {
+          userName: "Celine Debus :",
+          userComment:
+            "Je recommande vivement, un endroit chaleureux, une superbe déco et de très bons plats. Le brunch est fabuleux.",
+        },
+        {
+          userName: "Fabien Etvous :",
+          userComment:
+            "Nous avons passé un très bon moment au Café Maritime. Nous sommes arrivés en fin de service et nous avons été très bien accueillis. Nous avons très bien mangé. C'est un lieu que nous apprécions !!",
+        },
+        {
+          userName: "Vincent Tire :",
+          userComment:
+            "Très bel endroit pour déjeuner. Le menu avec entrée plat dessert à 22 €. Même pour un menu, les repas sont de qualité. Il ne faut pas hésiter",
+        },
+      ],
+    },
+  ];
   localStorage.setItem("userReview", JSON.stringify(restaurantsFeedbacks));
 } else {
+  restaurantsFeedbacks = JSON.parse(localStorage.getItem('userReview'));
   console.log(
     "Il y'a quelque chose dans le local Storage on va donc l'utiliser."
   );
@@ -587,74 +589,23 @@ const createPage = (index) => {
   if (selectedRestaurant) {
     restaurantPage.innerHTML = `
             <div class="block-img">
-                <img src=${
-                  listOfRestaurants[index].picture
-                } alt="Restaurant italien." class="restaurant-card-img" >
+                <img src=${listOfRestaurants[index].picture} alt="Restaurant italien." class="restaurant-card-img" >
             </div>
             <div class="text-restaurant">
-                <h3 class="title-restaurant">${
-                  listOfRestaurants[index].name
-                }</h3>
+                <h3 class="title-restaurant">${listOfRestaurants[index].name}</h3>
                 <p class="type-food">${listOfRestaurants[index].type}</p>
             <div class="note-price">
                 <span class="star">${listOfRestaurants[index].note}</span>
                 <span class="price">${listOfRestaurants[index].price}</span>
             </div>
-                <p class="description">${
-                  listOfRestaurants[index].description
-                }</p>
+                <p class="description">${listOfRestaurants[index].description}</p>
                 <div class="location">
-                <iframe src="${
-                  listOfRestaurants[index].map
-                }" width="250" height="112" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="${listOfRestaurants[index].map}" width="250" height="112" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="feedbacks">
                 <h3>Avis</h3>
                 <div class="feedback-cards">
-                    <div class="feedback-content">
-                        <span class="yellow-stars">★★★ ${
-                          restaurantsFeedbacks.find(
-                            (feedback) =>
-                              feedback.restaurantId ===
-                              listOfRestaurants[index].id
-                          ).feedback[0].userName
-                        }</span>
-                        <p class="feedback">${
-                          restaurantsFeedbacks.find(
-                            (feedback) =>
-                              feedback.restaurantId ===
-                              listOfRestaurants[index].id
-                          ).feedback[0].userComment
-                        }</p>
-                        <span class="yellow-stars">★★★ ${
-                          restaurantsFeedbacks.find(
-                            (feedback) =>
-                              feedback.restaurantId ===
-                              listOfRestaurants[index].id
-                          ).feedback[1].userName
-                        }</span>
-                        <p class="feedback">${
-                          restaurantsFeedbacks.find(
-                            (feedback) =>
-                              feedback.restaurantId ===
-                              listOfRestaurants[index].id
-                          ).feedback[1].userComment
-                        }</p>
-                        <span class="yellow-stars">★★★ ${
-                          restaurantsFeedbacks.find(
-                            (feedback) =>
-                              feedback.restaurantId ===
-                              listOfRestaurants[index].id
-                          ).feedback[2].userName
-                        }</span>
-                        <p class="feedback">${
-                          restaurantsFeedbacks.find(
-                            (feedback) =>
-                              feedback.restaurantId ===
-                              listOfRestaurants[index].id
-                          ).feedback[2].userComment
-                        }</p>
-                    </div>
+                <div class="feedback-content"></div>
                 </div>
                 <form id="write-review">
                     <input id="userReview" class="textContent" placeholder="Prénom, Nom *" type="text">
@@ -679,9 +630,16 @@ const createPage = (index) => {
   containerPage.appendChild(restaurantPage);
 };
 
-const addReviews = () => {
-  const reviewsContainer = document.querySelector('.feedback-content');
-  console.log(reviewsContainer);
+const addReviews = (restaurantId) => {
+  const reviewsContainer = document.querySelector(".feedback-content");
+  console.log(reviewsContainer, restaurantReviews);
+
+  restaurantReviews.feedback.forEach((feedback) => {
+    reviewsContainer.innerHTML += `
+      <span class="yellow-stars">★★★ ${feedback.userName}</span>
+      <p class="feedback">${feedback.userComment}</p>
+    `;
+  });
 };
 
 // Récupérez l'élément où vous afficherez les détails du restaurant
@@ -690,9 +648,12 @@ const restaurantDetailsContainer = document.querySelector("#body-scripted");
 // Récupérez l'ID du paramètre de requête dans l'URL
 const urlParams = new URLSearchParams(window.location.search);
 const restaurantId = urlParams.get("id");
+const restaurantReviews = restaurantsFeedbacks.find(
+  (feedbacks) => feedbacks.restaurantId === +restaurantId
+);
 
 // Utilisez la fonction createPage pour afficher les détails du restaurant en fonction de l'ID
 if (restaurantId) {
   createPage(restaurantId);
-  addReviews();
+  addReviews(+restaurantId);
 }
