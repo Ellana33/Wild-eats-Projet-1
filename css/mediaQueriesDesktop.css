@@ -13,6 +13,34 @@
     font-size: 25px;
   }
 
+  /* Bouton Sponsor */
+.menu > #sponsor {
+  position: absolute;
+  display: block;
+  color: white;
+  font-weight: bold;
+  right: 0;
+  width: 45px;
+  margin-right: 10px;
+  background-color: #2f827a;
+  border-radius: 50%;
+  transition: all ease 1s;
+}
+
+/* Animation bouton */
+.menu > #sponsor.animate {
+  font-size: 18px;
+  width: 200px;
+  border-radius: 10px;
+  transition: all ease 1s;
+}
+
+/* HTML */
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
   /* BODY */
   body > main > .title {
     height: 250px;

@@ -8,12 +8,42 @@
       href="https://fonts.googleapis.com/css?family=Prata"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="chips.css" />
-    <link rel="stylesheet" href="mediaQueriesDesktop.css" />
-    <link rel="stylesheet" href="mediaQueriesTablette.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/chips.css" />
+    <link rel="stylesheet" href="css/mediaQueriesDesktop.css" />
+    <link rel="stylesheet" href="css/mediaQueriesTablette.css" />
+    <link rel="stylesheet" href="css/sponsor.css">
   </head>
+  
+  <header>
+
+    <div id="loading">
+      <div class="block-text">
+        <img class="close-btn" src="img/close_button.png">
+        <h3>Wild'Apero</h3>
+        <p>Chargement des artefacts au complet.<br>Veuillez patienter s'il vous plaît.</p>
+      </div>
+      <div class="dots">
+       <span style="--i:1;"></span>
+       <span style="--i:2;"></span>
+       <span style="--i:3;"></span>
+       <span style="--i:4;"></span>
+       <span style="--i:5;"></span>
+       <span style="--i:6;"></span>
+       <span style="--i:7;"></span>
+       <span style="--i:8;"></span>
+       <span style="--i:9;"></span>
+       <span style="--i:10;"></span>
+       <span style="--i:11;"></span>
+       <span style="--i:12;"></span>
+       <span style="--i:13;"></span>
+       <span style="--i:14;"></span>
+       <span style="--i:15;"></span>
+   </div>
+  </div>
+
+  </header>
 
   <body>
     <nav>
@@ -24,6 +54,7 @@
         <a href="index.html">Accueil</a>
         <a href="#restaurant">Restaurants</a>
         <a href="#contact">Contact</a>
+        <a href="#" id="sponsor"> > </a>
       </div>
     </nav>
     <main>
@@ -88,8 +119,10 @@
           ><img src="img/fleche-droite.png" class="topup"
         /></a>
       </div>
+      <div id="copyright">Wild'Eat &copy; 2023 | All Rights Reserved.</div>
     </footer>
-    <script src="chips.js"></script>
-    <script src="createCards.js"></script>
+    <script src="functions/chips.js"></script>
+    <script src="functions/createCards.js"></script>
+    <script src="functions/showSponsor.js"></script>
   </body>
 </html>

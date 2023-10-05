@@ -341,7 +341,7 @@ const listOfRestaurants = [
 
 const createPage = (index) => {
   // Création et ajout du titre dans la balise h3 .title-restaurant
-  const containerPage = document.querySelector(".test");
+  const containerPage = document.querySelector("#body-scripted");
   const restaurantPage = document.createElement("div");
   const selectedRestaurant = listOfRestaurants.find(
     (restaurant) => restaurantId === index
@@ -399,7 +399,7 @@ const createPage = (index) => {
 };
 
 // Récupérez l'élément où vous afficherez les détails du restaurant
-const restaurantDetailsContainer = document.querySelector(".test");
+const restaurantDetailsContainer = document.querySelector("#body-scripted");
 
 // Récupérez l'ID du paramètre de requête dans l'URL
 const urlParams = new URLSearchParams(window.location.search);

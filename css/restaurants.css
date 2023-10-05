@@ -4,11 +4,11 @@ body {
   font-family: "Space Mono", monospace;
 }
 
-.test {
+#body-scripted  {
   background-color: #1a202c;
 }
 
-.test > img {
+#body-scripted > img {
   display: flex;
   height: 150px;
   width: 80%;
@@ -17,12 +17,12 @@ body {
   margin-bottom: 20px;
 }
 
-.test > .star,
+#body-scripted > .star,
 .price {
   margin-inline: 30px;
 }
 
-.test > .price {
+#body-scripted > .price {
   float: right;
 }
 
@@ -108,7 +108,7 @@ body {
 .text-restaurant > .type-food {
   margin-top: 5px;
 }
-/* Block .test */
+/* Block #body-scripted */
 
 /* Add comment */
 #write-review {

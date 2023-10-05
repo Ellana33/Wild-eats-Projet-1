@@ -49,6 +49,28 @@ nav > div {
   background-color: rgba(255, 255, 255, 0.295);
 }
 
+/* Loading */
+header > #loading > .block-text > .close-btn {
+  display: none;
+}
+
+header > #loading > .block-text > .title-sponsor {
+  display: none;
+}
+
+header > #loading > .block-text > .paragraph-sponsor {
+  display: none;
+}
+
+/* Bouton Sponsor */
+.menu > #sponsor {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .Accueil {
   margin: 30px 0 30px 100px;
   height: 30px;
@@ -103,7 +125,7 @@ nav > div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(img/banner.jpg);
+  background-image: url(../img/banner.jpg);
   background-size: cover;
   background-position: center;
   background-color: grey;
@@ -214,7 +236,7 @@ footer {
   justify-content: space-around;
   background-color: #2f827a;
   height: 80px;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .footer-follow,
@@ -241,4 +263,18 @@ footer {
 
 .span-image > img {
   padding-right: 2%;
+}
+
+footer {
+  display: flex;
+  position: relative;
+}
+
+footer > #copyright {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -19px;
+  color: #2f827a;
+  width: 100%;
+  background-color: white;
 }

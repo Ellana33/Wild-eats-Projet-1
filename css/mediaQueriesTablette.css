@@ -1,5 +1,6 @@
 /* Responsive Page Accueil et Page2. */
 @media screen and (min-width: 600px) and (max-width: 1199px) {
+
   /* NAV */
   nav {
     height: 75px;
@@ -11,6 +12,28 @@
 
   nav > .menu > a {
     font-size: 19px;
+  }
+
+  /* Bouton Partenariat. */
+  .menu > #sponsor {
+    position: absolute;
+    display: block;
+    color: white;
+    font-weight: bold;
+    right: 0;
+    width: 45px;
+    margin-right: 10px;
+    background-color: #2f827a;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+  }
+  
+  /* Animation bouton */
+  .menu > #sponsor.animate {
+    font-size: 15px;
+    width: 150px;
+    border-radius: 10px;
+    transition: all ease 1s;
   }
 
   /* BODY */
