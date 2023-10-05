@@ -9,7 +9,6 @@ header > #loading > .block-text > .close-btn {
     top: 20px;
     right: 20px;
     cursor: pointer;
-    /* background-image: url(../img/close_button.png); */
 }
 
 header > #loading > .block-text > h3  {
@@ -32,6 +31,10 @@ header > #loading > .block-text > p {
 }
 
 header > #loading {
+  display: none;
+}
+
+header > #loading.default {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -60,7 +63,9 @@ header > #loading {
   header > #loading > .dots {
     display: flex;
     position: absolute;
-    /* margin-top: 500px; */
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
     z-index: 1;
   }
   

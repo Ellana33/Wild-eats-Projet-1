@@ -1,3 +1,4 @@
+
 // Déclaration de la variable "formReview" et assignation à l'ID "write-review".
 const formReview = document.querySelector("#write-review");
 
@@ -15,7 +16,7 @@ const approuvPop = document.querySelector("#approuvMsg");
 let inputs = [userReview, contentReview, starReview];
 
 // Verification du contenu des champs et affichage d'erreur en cas d'erreurs.
-submitReview.addEventListener("click", (send) => {
+submitReview.addEventListener("click",  function writeAReviewContent(send) {
   send.preventDefault();
 
   if (userReview.value === "") {
@@ -56,3 +57,7 @@ submitReview.addEventListener("click", (send) => {
     inputs[1].value = "";
   }
 });
+
+export function test() {
+  console.log("Test.");
+}
