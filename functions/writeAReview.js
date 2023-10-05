@@ -25,8 +25,8 @@ submitReview.addEventListener("click",  function writeAReviewContent(send) {
   } else if (contentReview.value === "") {
     errorPop.innerHTML = "Votre avis rédigé n'est pas valide.";
     errorPop.classList.add("show");
+ 
   } else {
-
     let myReview = {
       userReview: userReview.value,
       contentReview: contentReview.value,
