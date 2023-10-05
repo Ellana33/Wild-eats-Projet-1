@@ -26,6 +26,14 @@ submitReview.addEventListener("click",  function writeAReviewContent(send) {
     errorPop.innerHTML = "Votre avis rédigé n'est pas valide.";
     errorPop.classList.add("show");
   } else {
+
+    let myReview = {
+      userReview: userReview.value,
+      contentReview: contentReview.value,
+      starReview: starReview.value
+    }
+    localStorage.setItem("userReview", myReview);
+    console.log(myReview);
     approuvPop.classList.add("show");
     approuvPop.innerHTML = "Le commentaire est ajouté avec succès.";
     errorPop.classList.remove("show");
