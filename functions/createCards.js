@@ -2,6 +2,18 @@ const restaurants = document.querySelector(".grid");
 
 const listOfRestaurants = [
   {
+    id: 0,
+    name: "Italian Trattoria",
+    picture: "img/restaurants/IT.jpg",
+    type: "Italien",
+    note: 4.1,
+    price: "$",
+    filterType: "Européen",
+    description:
+      "Une trattoria ancrée dans la tradition est généralement dépourvue de menu imprimé, avec un service décontracté, du vin vendu à la carafe plutôt qu'à la bouteille, des prix bas et un menu d'offres modestes mais abondantes qui suivent des recettes régionales et locales plutôt que de la haute cuisine.",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45249.98516144877!2d-0.5863512414017767!3d44.85976888757434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552985c9603b43%3A0x8950156090451f57!2sIT%20-%20Italian%20Trattoria%20-%20Bassins%20%C3%A0%20Flot%20N%C2%B02%2C%2040%20quai%20Virginie%20H%C3%A9riot%2C%20Bordeaux!5e0!3m2!1sen!2sfr!4v1696327610281!5m2!1sen!2sfr",
+  },
+  {
     name: "Flam's",
     picture: "img/restaurants/flams.jpg",
     type: "Flammekuche",
@@ -270,6 +282,7 @@ function createRestaurants(
 
   const restaurantReward = document.createElement("span");
   restaurantReward.classList.add("star");
+  restaurantReward.classList.add("star-container");
   restaurantReward.textContent = reward;
   restaurantInfo.appendChild(restaurantReward);
 
@@ -277,6 +290,8 @@ function createRestaurants(
   restaurantPrice.classList.add("price");
   restaurantPrice.textContent = price;
   restaurantInfo.appendChild(restaurantPrice);
+
+  showAverageStars(id, restaurantReward);
 }
 
 for (let index = 0; index < listOfRestaurants.length; index++) {

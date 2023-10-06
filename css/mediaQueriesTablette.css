@@ -72,6 +72,20 @@
   .span-image {
     width: 15rem;
   }
+
+  /* Scroll button */
+  footer .top_btn {
+    position: fixed;
+    bottom: 55px;
+    right: 100px;
+    z-index: 100;
+    transition: all ease 0.5s;
+    }
+  
+    footer .top_btn > .topup > img {
+      height: 45px;
+      width: 45px;
+    }
 }
 
 /* Responsive Page2 > BODY */
