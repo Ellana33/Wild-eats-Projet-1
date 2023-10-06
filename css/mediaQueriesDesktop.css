@@ -73,6 +73,20 @@ html {
   .footer-contact {
     font-size: 22px;
   }
+
+  /* Scroll button */
+  footer .top_btn {
+  position: fixed;
+  bottom: 45px;
+  right: 125px;
+  z-index: 100;
+  transition: all ease 0.5s;
+  }
+
+  footer .top_btn > .topup > img {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 /* Responsive Page2 > BODY */
