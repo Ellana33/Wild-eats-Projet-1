@@ -8,10 +8,10 @@
       href="https://fonts.googleapis.com/css?family=Prata"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="restaurants.css" />
-    <link rel="stylesheet" href="mediaQueriesDesktop.css" />
-    <link rel="stylesheet" href="mediaQueriesTablette.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/restaurants.css" />
+    <link rel="stylesheet" href="css/mediaQueriesDesktop.css" />
+    <link rel="stylesheet" href="css/mediaQueriesTablette.css" />
   </head>
 
   <body>
@@ -20,9 +20,9 @@
         <img src="img/logo.png" alt="logo" />
       </div>
       <div class="menu">
-        <a href="index.html">Accueil</a>
-        <a href="index.html">Restaurants</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" class="menu-link">Accueil</a>
+        <a href="index.html" class="menu-link">Restaurants</a>
+        <a href="#contact" class="menu-link">Contact</a>
       </div>
     </nav>
     <main>
@@ -35,7 +35,7 @@
         <h3>Vous êtes à la Wild et ne savez pas où manger ?</h3>
         <h3>Avec Wild'eat, vous trouevrez en 2 clics !</h3>
       </div>
-      <div class="test"></div>
+      <div id="body-scripted"></div>
     </main>
     <footer>
       <div class="footer-follow">
@@ -56,13 +56,17 @@
           ><img src="img/takeaway.png" class="pho" /> +33 00 00 00 00</span
         >
       </div>
-      <div>
-        <a href="#scrollup"
-          ><img src="img/fleche-droite.png" class="topup"
-        /></a>
+      <div class="top_btn">
+        <a class="topup" href="#scrollup">
+          <img src="img/fleche-droite.png" alt="Bouton scroll" />
+        </a>
       </div>
     </footer>
-    <script src="restaurants.js"></script>
+    <script src="functions/restaurantsFeedbacks.js"></script>
+    <script src="functions/star.js"></script>
+    <script src="functions/restaurants.js"></script>
     <script src="functions/writeAReview.js"></script>
+    <script src="functions/scrollBtn.js"></script>
+    <script src="functions/menuBurger.js"></script>
   </body>
 </html>

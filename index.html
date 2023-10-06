@@ -8,12 +8,43 @@
       href="https://fonts.googleapis.com/css?family=Prata"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="chips.css" />
-    <link rel="stylesheet" href="mediaQueriesDesktop.css" />
-    <link rel="stylesheet" href="mediaQueriesTablette.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/chips.css" />
+    <link rel="stylesheet" href="css/mediaQueriesDesktop.css" />
+    <link rel="stylesheet" href="css/mediaQueriesTablette.css" />
+    <link rel="stylesheet" href="css/sponsor.css" />
   </head>
+
+  <header>
+    <div id="loading">
+      <div class="block-text">
+        <img class="close-btn" src="img/close_button.png" />
+        <h3>Wild'Apero</h3>
+        <p>
+          Chargement des artefacts au complet.<br />Veuillez patienter s'il vous
+          plaît.
+        </p>
+      </div>
+      <div class="dots">
+        <span style="--i: 1"></span>
+        <span style="--i: 2"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 4"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 7"></span>
+        <span style="--i: 8"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 12"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 15"></span>
+      </div>
+    </div>
+  </header>
 
   <body>
     <nav>
@@ -21,9 +52,10 @@
         <img src="img/logo.png" alt="logo" />
       </div>
       <div class="menu">
-        <a href="index.html">Accueil</a>
-        <a href="#restaurant">Restaurants</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" class="menu-link">Accueil</a>
+        <a href="#restaurant" class="menu-link">Restaurants</a>
+        <a href="#contact" class="menu-link">Contact</a>
+        <a href="#" id="sponsor"> > </a>
       </div>
     </nav>
     <main>
@@ -44,25 +76,7 @@
         <div class="chip">Européen</div>
         <div class="chip">Ouvert tard</div>
       </div>
-      <div id="restaurant" class="grid">
-        <div class="restaurant-card" data-filter="Européen" data-id="0">
-          <img
-            src="img/restaurants/IT.jpg"
-            alt=""
-            class="restaurant-card-img"
-          />
-          <div class="restaurant-card-content">
-            <div class="restaurant-card-header">
-              <h3>It Italian Trattoria</h3>
-              <p>Italian</p>
-            </div>
-          </div>
-          <div class="restaurant-card-info">
-            <span class="star">★★★★ 4.1</span>
-            <span class="price">$$</span>
-          </div>
-        </div>
-      </div>
+      <div id="restaurant" class="grid"></div>
     </main>
     <footer>
       <div class="footer-follow">
@@ -80,16 +94,26 @@
           ><img src="img/mail.png" class="email" /> contact@wild-eats.com</span
         >
         <span class="phone span-image"
-          ><img src="img/takeaway.png" class="pho" /> +33 00 00 00 00</span
+          ><img
+            src="https://trello.com/1/cards/650c56e1c773d452165c70de/attachments/651e723e21eacb79964d2c3e/download/image.png"
+            class="pho"
+          />
+          +33 00 00 00 00</span
         >
       </div>
-      <div>
-        <a href="#scrollup"
-          ><img src="img/fleche-droite.png" class="topup"
-        /></a>
+      <div class="top_btn">
+        <a class="topup" href="#scrollup">
+          <img src="img/fleche-droite.png" alt="Bouton scroll" />
+        </a>
       </div>
+      <div id="copyright">Wild'Eat &copy; 2023 | All Rights Reserved.</div>
     </footer>
-    <script src="chips.js"></script>
-    <script src="createCards.js"></script>
+    <script src="functions/chips.js"></script>
+    <script src="functions/restaurantsFeedbacks.js"></script>
+    <script src="functions/star.js"></script>
+    <script src="functions/createCards.js"></script>
+    <script src="functions/showSponsor.js"></script>
+    <script src="functions/scrollBtn.js"></script>
+    <script src="functions/menuBurger.js"></script>
   </body>
 </html>

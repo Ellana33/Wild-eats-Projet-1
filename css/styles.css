@@ -43,10 +43,38 @@ nav > div {
   line-height: 50px;
   padding-left: 3px;
   padding-right: 3px;
+  transition: all ease 0.5s;
 }
 
 .menu a:hover {
   background-color: rgba(255, 255, 255, 0.295);
+}
+
+.menu-link.clic {
+  transform: translateY(10px);
+  transition: all ease 0.5s;
+}
+
+/* Loading */
+header > #loading > .block-text > .close-btn {
+  display: none;
+}
+
+header > #loading > .block-text > .title-sponsor {
+  display: none;
+}
+
+header > #loading > .block-text > .paragraph-sponsor {
+  display: none;
+}
+
+/* Bouton Sponsor */
+.menu > #sponsor {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .Accueil {
@@ -103,7 +131,7 @@ nav > div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(img/banner.jpg);
+  background-image: url(../img/banner.jpg);
   background-size: cover;
   background-position: center;
   background-color: grey;
@@ -214,7 +242,7 @@ footer {
   justify-content: space-around;
   background-color: #2f827a;
   height: 80px;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 .footer-follow,
@@ -241,4 +269,45 @@ footer {
 
 .span-image > img {
   padding-right: 2%;
+}
+
+footer {
+  display: flex;
+  position: relative;
+}
+
+/* Scroll button */
+footer .top_btn {
+  position: fixed;
+  bottom: 65px;
+  right: 75px;
+  z-index: 100;
+  transition: all ease 0.5s;
+}
+
+footer .top_btn:hover {
+  transform: translateY(-20px);
+  transition: all ease 0.5s;
+}
+
+footer .top_btn > .topup > img {
+  height: 40px;
+  width: 40px;
+}
+
+.topup {
+  display: none;
+}
+
+.topup.show {
+  display: block;
+}
+
+footer > #copyright {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -19px;
+  color: #2f827a;
+  width: 100%;
+  background-color: white;
 }
