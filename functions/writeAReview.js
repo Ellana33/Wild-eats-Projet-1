@@ -44,17 +44,20 @@ submitReview.addEventListener("click", function writeAReviewContent(send) {
     userReview.classList.add("yellow-stars");
     contentReview.classList.add("feedback");
 
-    userReview.innerHTML = showStars(inputs[2].value) + " " + inputs[0].value + " :";
+    userReview.innerHTML =
+      showStars(inputs[2].value) + " " + inputs[0].value + " :";
     contentReview.innerHTML = inputs[1].value;
 
     feedbackBlock.appendChild(userReview);
     feedbackBlock.appendChild(contentReview);
-    restaurantsFeedbacks.find((feedback) => feedback.restaurantId === +restaurantId).feedback.push({
-      userName: inputs[0].value,
-      userComment: inputs[1].value,
-      userStar: +inputs[2].value,
-    });
-    localStorage.setItem('userReview', JSON.stringify(restaurantsFeedbacks));
+    restaurantsFeedbacks
+      .find((feedback) => feedback.restaurantId === +restaurantId)
+      .feedback.push({
+        userName: inputs[0].value,
+        userComment: inputs[1].value,
+        userStar: +inputs[2].value,
+      });
+    localStorage.setItem("userReview", JSON.stringify(restaurantsFeedbacks));
     showAverageStars(restaurantId);
 
     inputs[0].value = "";
