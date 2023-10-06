@@ -636,7 +636,7 @@ const addReviews = (restaurantId) => {
 
   restaurantReviews.feedback.forEach((feedback) => {
     reviewsContainer.innerHTML += `
-      <span class="yellow-stars">★★★ ${feedback.userName}</span>
+      <span class="yellow-stars">★★★ ${feedback.userName} :</span>
       <p class="feedback">${feedback.userComment}</p>
     `;
   });
